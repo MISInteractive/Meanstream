@@ -1,0 +1,119 @@
+<%@ Master Language="VB" CodeFile="Default.master.vb" Inherits="Meanstream_UI_Skins_Default" %>
+<%@ Register Src="~/Meanstream/UI/UserControls/Menu.ascx" TagName="Menu" TagPrefix="Meanstream" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<Head id="Head1" runat="server">
+   
+</Head>
+<body class="container">
+<%--<script src="/Meanstream/UI/Scripts/wz_tooltip.js" type="text/javascript"></script>
+<script src="/Meanstream/UI/Scripts/tip_balloon.js" type="text/javascript"></script>
+--%>
+<form id="form1" runat="server">
+    <Meanstream:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference InlineScript="false" Path="~/Meanstream/Widgets/WidgetService.asmx" />
+        </Services>
+        <Scripts>
+            <asp:ScriptReference Name="MicrosoftAjax.js" Path="/Scripts/MicrosoftAjax/MicrosoftAjax.js" />
+            <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Path="/Scripts/MicrosoftAjax/MicrosoftAjaxWebForms.js" />
+        </Scripts>
+    </Meanstream:ScriptManager>
+   <%-- <script src="/Scripts/jquery-1.4.2.min.js" type="text/javascript"></script>--%>
+<script src="/scripts/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="/Scripts/ScriptLoader.js" type="text/javascript"></script>
+    <script src="/Scripts/Meanstream.Web.UI.Dependencies.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.blockUI.js" type="text/javascript"></script>
+    <script src="/App_Themes/Meanstream.2011/theme.js" type="text/javascript"></script>
+    <script src="/Scripts/Meanstream.ScriptServices.js" type="text/javascript"></script> 
+
+    <script src="/Scripts/Resources/swfobject.js" type="text/javascript"></script>
+    <script src="/Scripts/Plugins/jquery.uploadify.js" type="text/javascript"></script>
+   <%-- <script src="/Scripts/Controls/Uploader/upload.js" type="text/javascript"></script>--%>
+    <script src="/scripts/KendoUI/kendo.all.min.js" type="text/javascript"></script>
+<link href="/scripts/KendoUI/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="/scripts/KendoUI/kendo.metro.min.css" rel="stylesheet" type="text/css" />
+     <Meanstream:Window ID="Window1" runat="server"  NavigateUrl="/Meanstream/UI/FileManager/FileManager.aspx"  Height="90%" Width="90%"  ShowLoader=true CssClass="Black"  Title="Meanstream File Manager"  />
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="20" height="59"><div class="spacer20x20" /></td>
+        <td width="100%" valign="middle"> 
+            <Meanstream:Menu ID="Menu" runat="server" />   
+        </td>
+        <td valign="middle"><div align="right"></div></td>
+        <td width="20"><div class="spacer20x20" /></td>
+      </tr>
+      <tr>
+        <td colspan="4"><div class="spacer20x20" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" valign="top"><div align="center">
+            <asp:ContentPlaceHolder ID="ContentPane" runat="server" />
+        </div></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" valign="top"><div class="spacer40x40" /></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e3e3e3"><div class="spacer20x1" /></td>
+        <td colspan="2" valign="top" bgcolor="#e3e3e3"><div class="spacer20x1" /></td>
+        <td bgcolor="#e3e3e3"><div class="spacer20x1" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" valign="top"><div class="spacer20x20" /></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" valign="top"><div align="right"><a href="http://www.meanstream.co" target="_blank" class="logo-footer"></a><br>
+          <br>
+        </div></td>
+        <td>&nbsp;</td>
+      </tr>
+
+    </table>
+    <br />
+    <br />
+    <script>
+        var Window1_DOM = 'Window1';
+        var Window1_w = 0.9 * ($(window).width() - 40); ;
+        var Window1_h = 0.9 * ($(window).height() - 40); ;
+        $().ready(function () {
+            $(window).resize(function () {
+
+
+                Sys.require([Sys.scripts.msWindow], function () {
+                    msCollapseModal(Window1_h, Window1_w, Window1_DOM);
+
+                });
+
+
+
+            });
+
+
+
+        });
+        function callFileManager() {
+
+            Sys.require([Sys.scripts.msWindow], function () {
+               
+                msShowModal(Window1_h, Window1_w, Window1_DOM, '/Meanstream/UI/FileManager/FileManager.aspx', true, '');
+
+            });
+
+
+
+
+        }
+    </script>
+</form>
+</body>
+</html>

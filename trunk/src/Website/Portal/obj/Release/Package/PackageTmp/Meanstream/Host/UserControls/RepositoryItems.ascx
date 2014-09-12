@@ -1,0 +1,117 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="RepositoryItems.ascx.vb" Inherits="Meanstream_Host_UserControls_RepositoryItems" %>
+
+<style>
+/* Tiny Scrollbar */
+#scrollbar1 { width: 1800px; margin: 20px 0 10px; }
+#scrollbar1 .viewport { width: 1800px; height: 700px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(/scripts/plugins/images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(/scripts/plugins/images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(/scripts/plugins/images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(/scripts/plugins/images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+</style>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td nowrap><span class="largelink"><asp:Literal ID="litName" runat="server"></asp:Literal></span></td>
+            <td><div class="spacer10x20" /></td>
+            <td><a onmouseover="Tip('<b>Items</b>', BALLOON, true, ABOVE, true, OFFSETX, -17, PADDING, 8)" onmouseout="UnTip()""><div class="icon-help"></div></a></td>
+            <td><table border="0" align="right" cellpadding="0" cellspacing="0">
+                <tr>
+                <td width="16"><div class="spacer10x35"></td>
+                <td width="16" height="20"><a href="./Default.aspx?ctl=Repositories"><div class="icon-prevsmall"></div></a></td>
+                <td width="3"><div class="spacer10x3" /></td>
+                <td nowrap class="subnavsmall"><a href="./Default.aspx?ctl=Repositories">go back to repositories</a></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+          <br/></td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+             <td><div class="spacer20x20" /></td>
+           </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td nowrap>Search:</td>
+                    <td><div class="spacer10x20" /></td>
+                    <td>
+                        <asp:TextBox ID="txtSearch" runat="server" SkinID="Text" Width="225" ></asp:TextBox>
+                    </td>
+                    <td><div class="spacer10x20" /></td>
+                    <td>
+                        <asp:DropDownList ID="ddlOperator" runat="server">
+                            <asp:ListItem Text="=" Value="=" />
+                            <asp:ListItem Text="<>" Value="<>" />
+                            <asp:ListItem Text="like" Value="like" />
+                        </asp:DropDownList>
+                    </td>
+                    <td><div class="spacer10x20" /></td>
+                    <td>
+                        <asp:DropDownList ID="ddlSearchColumns" runat="server" />
+                    </td>
+                    <td><div class="spacer10x20" /></td>
+                    <td><asp:ImageButton ID="btnSearch" runat="server" /></td>
+                  </tr>
+              </table></td>
+              <td><div align="right"></div></td>
+            </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+             <td><div class="spacer20x20" /></td>
+           </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><div class="spacer20x20" /></td>
+                <td class="nav2">&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="20"><div class="spacer10x20" /></td>
+                <td width="100%" class="nav2">
+                    <!--<div align="left" id="scrollbar1">
+
+			<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+			<div class="viewport">
+			<div class="overview">-->
+
+			<asp:Panel ID="panelContainer" runat="server" Height="700px" Width="960px"  ScrollBars="Horizontal">
+                        <asp:GridView ID="grid" 
+                            runat="server" 
+                            AutoGenerateColumns="false" 
+                            AutoGenerateEditButton="false" 
+                            AutoGenerateDeleteButton="false">
+                        </asp:GridView>
+			</asp:Panel>
+			<!--</div>
+			</div>
+			</div>
+                    </div>-->
+                    <br />
+                    <br />
+                </td>
+                <td width="20"><div class="spacer10x20" /></td>
+              </tr>
+          </table>
+      </td>
+   </tr>
+</table>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		//$('#scrollbar1').tinyscrollbar({ size: 'auto'});
+		
+	});
+</script>

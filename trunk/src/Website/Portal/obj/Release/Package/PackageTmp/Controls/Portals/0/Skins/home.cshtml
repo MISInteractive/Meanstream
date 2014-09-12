@@ -1,0 +1,119 @@
+﻿@model Portal.Models.PortalPageViewModel
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Keywords = Model.MetaKeywords;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Id = Model.Id.ToString();
+}
+
+<section class="outer">
+    <div class="ui-flex-container img">
+        <div class="ui-flex-container border">
+            <div class="ui-flex-container bottom absolute smaller"><h1></h1></div>
+            <div data-portal-content-pane="main-image" data-role="carousel-outer-container">
+                <div class="navigation prev" data-role="prev"></div>
+                <div class="navigation next" data-role="next"></div>
+                <div data-role="carousel-inner-container">
+                    <ul class="ui-carousel" data-ui="carousel" data-option-fade-transition="true" data-option-auto="true">
+                        <li><img alt="" src="/images/home-no-verbiage.jpg"></li>
+                        <li><img alt="" src="https://media.r3vstack.com/assets/somersetbayhome/categories/Bedroom.jpg"></li>
+                        <li><img alt="" src="https://media.r3vstack.com/assets/somersetbayhome/categories/end-occasional-tables.jpg"></li>
+                        <li><img alt="" src="https://media.r3vstack.com/assets/somersetbayhome/categories/Miscellaneous.jpg"></li>
+                        <li><img alt="" src="https://media.r3vstack.com/assets/somersetbayhome/categories/Transitions.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container pattern">
+                <a href="/gallery?c=Express-Menu" style="z-index: 1000;">EXPRESS MENU - 10 to 12 Week Expedited Delivery Program >></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container transitions" data-portal-content-pane="second-image" style="cursor: pointer;">
+                @{Html.RenderPartial("~/Controls/Portals/0/Skins/_WidgetZone.cshtml", Model, new ViewDataDictionary() { { "Zone", "second-image" } });}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <hr class="line">
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container space-between banner-2">
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute" style="cursor: pointer;" id="home-new"><span>New Additions</span></div>
+                    <a><img src="/images/banner-2-1.png"></a>
+                </div>
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute" style="cursor: pointer;" id="home-finishes"><span>Finshes</span></div>
+                    <a><img src="/images/banner-2-2.png"></a>
+                </div>
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute" style="cursor: pointer;" id="home-press"><span>Press</span></div>
+                    <a><img src="/images/banner-2-3.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container space-around banner-3">
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute smaller" style="cursor: pointer;" id="home-upholstery"><span>Upholstery</span></div>
+                    <a href="/upholstery"><img src="/images/banner-3-1.png"></a>
+                </div>
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute smaller" style="cursor: pointer;" id="home-lifestyle"><span>Lifestyle</span></div>
+                    <a href="/flooring"><img src="/images/banner-3-2.png"></a>
+                </div>
+                <div class="ui-flex-container border">
+                    <div class="ui-flex-container absolute smaller" style="cursor: pointer;" id="home-rugs"><span>Rugs</span></div>
+                    <a href="/rugs"><img src="/images/banner-3-3.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script language="javascript">
+    $(document).ready(function () {
+        //instantiate carousel
+        var autoAnimation = true;
+        //ie8,firefox, disable auto
+        if ($('html').hasClass('ie8') || $.browser.mozilla) {
+            autoAnimation = false;
+        }
+        var carousel = $('[data-ui="carousel"]');
+        carousel.carousel({
+            animation: 'fade',
+            auto: autoAnimation
+        });        
+        $('.trans-home').click(function () {
+            window.location.href = '/gallery?c=Transitions';
+        });
+        $('#home-new').click(function () {
+            window.location.href = '/gallery?c=Transitions';
+        });
+        $('#home-finishes').click(function () {
+            window.location.href = '/finishes';
+        });
+        $('#home-press').click(function () {
+            window.location.href = '/press';
+        });
+        $('#home-upholstery').click(function () {
+            window.location.href = '/upholstery';
+        });
+        $('#home-lifestyle').click(function () {
+            window.location.href = '/lifestyle';
+        });
+        $('#home-rugs').click(function () {
+            window.location.href = '/rugs';
+        });
+    });
+</script>

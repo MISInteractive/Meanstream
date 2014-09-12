@@ -1,0 +1,673 @@
+﻿
+
+
+.contextMenu {
+	position: absolute;
+	width: 120px;
+	z-index: 99999;
+	border: solid 1px #000;
+	background: #4F4F4F;
+	padding: 2px;
+	margin: 0px;
+	display: none;
+}
+
+.contextMenu LI {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contextMenu A {
+	color: #fff;
+	font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	background-position: 6px center;
+	background-repeat: no-repeat;
+	outline: none;
+	padding: 5px 5px;
+	padding-left: 28px;
+}
+
+.contextMenu LI.hover A {
+	color: #9EC849;
+	
+	background-image:url(images/contextBG.png);
+	background-repeat:repeat-x;
+}
+
+.contextMenu LI.disabled A {
+	color: #AAA;
+	cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+	background-color: transparent;
+}
+
+.contextMenu LI.separator {
+	border-top: solid 1px #CCC;
+}
+
+/*
+	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/
+
+
+.tooltip {
+	display:none;
+	background:transparent url(images/tooltip.png);
+	background-repeat:no-repeat;
+	font-size:12px;
+	font-family: "segoe ui",arial,sans-serif;
+	height:60px;
+	width:103px;
+	text-align:center;
+	z-index:10000;
+	
+	
+	color:#fff;	
+}
+
+.msExplorerContainer
+{
+    
+    background-color:#373737;
+    
+    z-index:2;
+    border-bottom-color:#484848;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-left-color:#484848;
+    border-left-style:solid;
+    border-left-width:1px;
+    border-right-color:#484848;
+    border-right-style:solid;
+    border-right-width:1px;
+    border-top-color:#000000;
+    border-top-style:solid;
+    border-top-width:1px;
+   
+}
+.null
+{
+    filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+
+}
+.msImage
+{
+    border-style:solid;
+    border-color:#484848;
+    border-width:2px;
+}
+.msPreview
+{
+   background-image:url(images/imagepreview.png);
+   background-repeat:no-repeat; 
+   width:235px;
+   height:235px;
+}
+.msNoPreview
+{
+   background-image:url(images/nopreview.png);
+   background-repeat:no-repeat; 
+   width:235px;
+   height:235px;
+}
+.msPaging
+{
+   background-image:url(images/pagingBg.png);
+   background-repeat:repeat-x;
+   height:53px;
+}
+.btnPrev
+{
+   background-image:url(images/btnPrev.png);
+   background-repeat:no-repeat;
+   height:18px;
+   width:18px;
+   cursor:pointer;
+}
+.btnNext
+{
+   background-image:url(images/btnNext.png);
+   background-repeat:no-repeat;
+   height:18px;
+   width:18px;
+   cursor:pointer;
+}
+
+.msPagingNumerical
+{
+   color: #fff;
+   
+   font-family: "segoe ui",arial,sans-serif;
+   font-size: 12px;
+   font-weight:bold;
+}
+.msPagingText
+{
+   color: #D7D7D7;
+   
+   font-family: "segoe ui",arial,sans-serif;
+   font-size: 12px;
+   
+}
+.OKBut
+{
+   background-image:url(images/btnOK.png);
+   background-repeat:no-repeat; 
+   width:46px;
+   height:21px;
+}
+.CancelBut
+{
+   background-image:url(images/btnCancel.png);
+   background-repeat:no-repeat; 
+   width:66px;
+   height:21px;
+}
+.msSpacer
+{
+   background-image:url(images/transp.gif);
+   background-repeat:repeat-x;
+   
+}
+.spanGreen
+{
+    color:#9EC849;
+}
+.spanYellow
+{
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+    color:#FBDC07;
+    font-weight:bold;
+    margin-left:10px;
+    
+}
+
+.spanWhite
+{
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+    color:#D7D7D7;
+   
+}
+.spanTitle
+{
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+    color:#D7D7D7;
+    
+}
+.msLink
+{
+    color:#FBDC07;
+    text-decoration:underline;
+}
+
+.msStatus
+{
+    border-style:solid;
+    border-color:#000;
+    border-width:1px;
+    background-color:#626262;
+    padding:10px;
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+	color:#ffffff;
+}
+.msText
+{
+    background-color:#373737;
+    border-width:0px;
+    height:19px;
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 14px;
+    color: #D7D7D7;
+}
+.msText2
+{
+    background-color:#626262;
+    border-width:0px;
+    height:13px;
+    
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+    color: #fff;
+}
+.msMsg
+{
+    
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+	color:#ffffff;
+}
+.msMsgTitle
+{
+    
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 16px;
+	color:#ffffff;
+}
+.msMsgTitleSuccess
+{
+    
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 16px;
+	color:#ffffff;
+}
+.msLine
+{
+    height:1px;
+    background-color:#000000;
+    color:#000000;
+}
+.msTitle
+{
+    background-color:Transparent;
+    background-image:url(images/fm.png);
+    background-repeat:no-repeat;
+    width:600px;
+    height:48px;
+}
+.msExplorerBar
+{
+    background-image:url(images/topExpBar.jpg);
+    background-repeat:repeat-x;
+    border-left-color:#484848;
+    border-left-style:solid;
+    border-left-width:1px;
+    border-right-color:#484848;
+    border-right-style:solid;
+    border-right-width:1px;
+    border-top-color:#484848;
+    border-top-style:solid;
+    border-top-width:1px;
+}
+.folderIcon
+{
+ background-image:url(images/foldericon.png); 
+   background-repeat:no-repeat;
+   height:61px;
+     
+}
+.helpIcon
+{
+ background-image:url(images/helpLg.png); 
+   background-repeat:no-repeat;
+   height:64px;
+     
+}
+.deleteIcon
+{
+ background-image:url(images/deleteLg2.png); 
+   background-repeat:no-repeat;
+   height:64px;
+   
+}
+.uploadIcon
+{
+ background-image:url(images/uploadLG.png); 
+   background-repeat:no-repeat;
+   height:64px;
+     
+}
+.msTextBox
+{
+    background-color:#444444;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    color:#fff;
+ 
+     
+}
+.msTextBoxDisabled
+{
+    background-color:#444444;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    color:#999;
+ 
+     
+}
+.msCommand1
+{
+   background-image:url(images/folder-gold.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand2
+{
+   background-image:url(images/stats.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand3
+{
+   background-image:url(images/page-right.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand4
+{
+   background-image:url(images/folder-delete.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand5
+{
+   background-image:url(images/notepad-write.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand6
+{
+   background-image:url(images/page-up.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer;
+}
+.msCommand7
+{
+   background-image:url(images/calculator.png); 
+   background-repeat:no-repeat;
+   height:32px;
+   width:32px;
+   cursor:pointer; 
+}
+.msCoint1
+{
+    margin-left:0px;
+    font-family: "segoe ui",arial,sans-serif;
+	font-size: 14px;
+    color: #D7D7D7;
+    border-left-style:solid;
+    border-left-width:1px;
+    border-left-color:#484848;
+    border-right-style:solid;
+    border-right-width:1px;
+    border-right-color:#484848;
+    padding-left:10px;
+    background-color:#373737;
+}
+.msFiles
+{
+    padding:10px;
+    vertical-align:bottom;
+    margin-top:20px;
+    
+   
+}
+.msFileBar {
+	font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+	color:#ffffff;
+	padding-left:15px;
+	padding-top:4px;
+	
+	
+}
+.msFileBar2 {
+	font-family: "segoe ui",arial,sans-serif;
+	font-size: 12px;
+	color:#ffffff;
+	padding-right:15px;
+	padding-top:4px;
+	text-align:right;
+	
+	
+}
+.msFileSize
+{
+   color: #D7D7D7;
+   text-align:right; 
+}
+.msScroll
+{
+   
+    
+}
+.msClickable
+{
+    cursor:pointer;
+}
+.msHover
+{
+   
+    
+   background-image:url(images/selectedBG3.png); 
+   background-repeat:repeat-x;
+  
+    
+   
+}
+.msSelected
+{
+   
+   background-image:url(images/selectedBG.png); 
+   background-repeat:repeat-x;
+}
+.msExpGradient
+{
+   background: url(images/expGradient.png) ;
+   background-repeat:repeat-x;
+}
+
+.vsplitbar {
+	width: 6px;
+	background: #464646 url(images/msVgrabber.png) no-repeat center;
+	border-right-color:#000000;
+	border-right-style:solid;
+	border-right-width:1px;
+}
+.vsplitbar.active {
+	width: 6px;
+	background: #464646 url(images/msVgrabber.png) no-repeat center;
+	border-right-color:#000000;
+	border-right-style:solid;
+	border-right-width:1px;
+	-moz-opacity:50 ;
+    filter:alpha(opacity: 50);
+    opacity: 50;
+}
+
+UL.jqueryFileTree {
+	font-family: "segoe ui",arial,sans-serif !Important;
+	font-size: 12px !Important;
+	line-height: 26px !Important;
+	padding: 0px !Important;
+	margin: 0px !Important;
+}
+
+UL.jqueryFileTree LI {
+	list-style: none !Important;
+	padding: 0px !Important;
+	padding-left: 20px !Important;
+	margin: 0px !Important;
+	white-space: nowrap !Important;
+}
+
+UL.jqueryFileTree A {
+	color: #D7D7D7 !Important;
+	text-decoration: none !Important;
+	display: block !Important;
+	padding: 0px 2px !Important;
+	
+	
+}
+
+
+UL.jqueryFileTree A:hover {
+	background: #424242 !Important;
+	
+
+}
+
+
+
+
+/* Core Styles */
+.jqueryFileTree LI.directory { background: url(images/directory.png) left top no-repeat; }
+.jqueryFileTree LI.expanded { background: url(images/folder_open.png) left top no-repeat; }
+.jqueryFileTree LI.file { background: url(images/file.png) left top no-repeat; }
+.jqueryFileTree LI.wait { background: url(images/spinner.gif) left top no-repeat; }
+/* File Extensions*/
+.jqueryFileTree LI.ext_3gp { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_afp { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_afpa { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_asp { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_aspx { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_avi { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_bat { background: url(images/application.png) left top no-repeat; }
+.jqueryFileTree LI.ext_bmp { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_c { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_cfm { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_cgi { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_com { background: url(images/application.png) left top no-repeat; }
+.jqueryFileTree LI.ext_cpp { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_css { background: url(images/css.png) left top no-repeat; }
+.jqueryFileTree LI.ext_doc { background: url(images/doc.png) left top no-repeat; }
+.jqueryFileTree LI.ext_exe { background: url(images/application.png) left top no-repeat; }
+.jqueryFileTree LI.ext_gif { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_fla { background: url(images/flash.png) left top no-repeat; }
+.jqueryFileTree LI.ext_h { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_htm { background: url(images/html.png) left top no-repeat; }
+.jqueryFileTree LI.ext_html { background: url(images/html.png) left top no-repeat; }
+.jqueryFileTree LI.ext_jar { background: url(images/java.png) left top no-repeat; }
+.jqueryFileTree LI.ext_jpg { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_jpeg { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_js { background: url(images/script.png) left top no-repeat; }
+.jqueryFileTree LI.ext_lasso { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_log { background: url(images/txt.png) left top no-repeat; }
+.jqueryFileTree LI.ext_m4p { background: url(images/music.png) left top no-repeat; }
+.jqueryFileTree LI.ext_mov { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_mp3 { background: url(images/music.png) left top no-repeat; }
+.jqueryFileTree LI.ext_mp4 { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_mpg { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_mpeg { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_ogg { background: url(images/music.png) left top no-repeat; }
+.jqueryFileTree LI.ext_pcx { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_pdf { background: url(images/pdf.png) left top no-repeat; }
+.jqueryFileTree LI.ext_php { background: url(images/php.png) left top no-repeat; }
+.jqueryFileTree LI.ext_png { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_ppt { background: url(images/ppt.png) left top no-repeat; }
+.jqueryFileTree LI.ext_psd { background: url(images/psd.png) left top no-repeat; }
+.jqueryFileTree LI.ext_pl { background: url(images/script.png) left top no-repeat; }
+.jqueryFileTree LI.ext_py { background: url(images/script.png) left top no-repeat; }
+.jqueryFileTree LI.ext_rb { background: url(images/ruby.png) left top no-repeat; }
+.jqueryFileTree LI.ext_rbx { background: url(images/ruby.png) left top no-repeat; }
+.jqueryFileTree LI.ext_rhtml { background: url(images/ruby.png) left top no-repeat; }
+.jqueryFileTree LI.ext_rpm { background: url(images/linux.png) left top no-repeat; }
+.jqueryFileTree LI.ext_ruby { background: url(images/ruby.png) left top no-repeat; }
+.jqueryFileTree LI.ext_sql { background: url(images/db.png) left top no-repeat; }
+.jqueryFileTree LI.ext_swf { background: url(images/flash.png) left top no-repeat; }
+.jqueryFileTree LI.ext_tif { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_tiff { background: url(images/picture.png) left top no-repeat; }
+.jqueryFileTree LI.ext_txt { background: url(images/txt.png) left top no-repeat; }
+.jqueryFileTree LI.ext_vb { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_wav { background: url(images/music.png) left top no-repeat; }
+.jqueryFileTree LI.ext_wmv { background: url(images/film.png) left top no-repeat; }
+.jqueryFileTree LI.ext_xls { background: url(images/xls.png) left top no-repeat; }
+.jqueryFileTree LI.ext_xml { background: url(images/code.png) left top no-repeat; }
+.jqueryFileTree LI.ext_zip { background: url(images/zip.png) left top no-repeat; }
+
+/*Controls Section*/
+#controls-wrapper { margin:0 auto; display:none; height:62px; width:100%; bottom:0; left:0; z-index:9999999; background:url(images/nav-bg.png) repeat-x; position:fixed; }
+#controls { overflow:hidden; height:100%; text-align:left; z-index:5; padding:0 114px; /* Increase padding to give thumbnails room */ }
+#slidecounter { float:left; color:#888; font:16px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; text-shadow:#000 0 -1px 0; margin:19px 10px 18px 20px; }
+#slidecaption { overflow:hidden; float:left; color:#FFF; font:16px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:bold; text-shadow:#000 0 2px 0; margin:23px 20px 23px 0; }
+#navigation { float:right;  margin:10px 20px 0 0; }
+#prevslide
+{
+    background-image:url(images/back_dull.png);
+    background-repeat:no-repeat;
+    height:44px;
+    width:44px;
+    float:left;
+}
+#nextslide
+{
+    background-image:url(images/forward_dull.png);
+    background-repeat:no-repeat;
+    height:44px;
+    width:44px;
+    clear:left;
+}
+.previewMode
+{
+    background-image:url(images/previewmode.png);
+    background-repeat:no-repeat;
+    height:33px;
+    width:188px;
+   
+}
+#document-controls-wrapper { margin:0 auto; display:none; height:62px; width:100%; bottom:0; left:0; z-index:99999999; background:url(images/nav-bg.png) repeat-x; position:fixed; }
+#doccontrols { overflow:hidden; height:100%; text-align:left; z-index:5; padding:0px 14px;  }
+#docnavigation { float:right;  margin:10px 20px 0 0; }
+.documentpreviewMode
+{
+    background-image:url(images/documentpreviewmode.png);
+    background-repeat:no-repeat;
+    height:33px;
+    width:300px;
+   
+}
+.close
+{
+    background-image:url(images/close.png);
+    background-repeat:no-repeat;
+    height:32px;
+    width:31px;
+    margin-top:15px;
+    cursor:pointer;
+    
+}
+.docDownload
+{
+   
+   float:left;
+   font-weight:bold;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:12px;
+   color:#B5B5B5;
+   text-decoration:none;
+   
+}
+.ajaxLoader
+{
+    background-image:url(images/ajax-loader.gif);
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+    display:none;
+    position: absolute;
+    top: 200px;
+    left:400px;
+    z-index:99999999;
+    
+}

@@ -1,0 +1,313 @@
+﻿.logo
+{
+	display: block;
+	background:url(images/meanstream-logo.png);
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 54px;
+    border: 0px;
+}
+.logo-footer
+{
+	display: block;
+	background:url(images/logo-footer.png);
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 54px;
+    border: 0px;
+}
+.nav-bg
+{
+	background-image:url(images/nav-bg.jpg);
+    background-repeat:no-repeat;
+}
+.spacer20x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 20px;
+}
+.spacer10x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 10px;
+}
+.spacer50x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 50px; 
+    height: 20px;
+}
+.spacer10x15
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 15px; 
+    height: 10px;
+}
+.spacer10x10
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 10px; 
+    height: 10px;
+}
+.spacer1x1
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 1px; 
+    height: 1px;
+}
+.spacer10x35
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 35px; 
+    height: 10px;
+}
+.spacer10x1
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 1px; 
+    height: 10px;
+}
+.spacer10x6
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 6px; 
+    height: 10px;
+}
+.spacer10x3
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 3px; 
+    height: 10px;
+}
+.spacer1x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 1px;
+}
+.spacer1x10
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 10px; 
+    height: 1px;
+}
+.spacer25x10
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 25px; 
+    height: 10px;
+}
+.tree-barleft
+{
+	display: block;
+    background:url(images/tree-barleft.png);
+    background-repeat: repeat;
+    width: 20px; 
+    height: 40px;
+}
+.tree-barmid
+{
+	display: block;
+    background:url(images/tree-barmid.png);
+    background-repeat: repeat;
+    width: 100%; 
+    height: 40px;
+}
+.icon-helptree
+{
+	display: block;
+    background:url(images/icon-help.png);
+    background-repeat:no-repeat;
+    width: 16px; 
+    height: 16px;
+}
+.tree-bg
+{
+	display: block;
+    background-image: url(images/tree-bg.png);
+    background-repeat: repeat;
+}
+.icon-help
+{
+	display: block;
+    background:url(images/icon-help.png);
+    width: 16px; 
+    height: 16px;
+}
+.icon-prevsmall
+{
+	display: block;
+    background:url(images/icon-prevsmall.png);
+    width: 16px; 
+    height: 16px;
+}
+.tab-header-left
+{
+	display: block;
+    background:url(images/tab-header-left.png);
+    width: 1px; 
+    height: 22px;
+}
+.tab-headeron
+{
+	display: block;
+    background:url(images/tab-headeron.png);
+    width: 1px; 
+    height: 22px;
+}
+.tab-bg
+{
+	display: block;
+    background:url(images/tab-bg.png);
+}
+.tab-line
+{
+	background-color: #E6E6E6;
+}
+.icon-addpage
+{
+	display: block;
+    background:url(images/icon-addpage.png);
+    width: 16px; 
+    height: 16px;
+}
+.icon-pagecopy
+{
+	display: block;
+    background:url(images/icon-pagecopy.png);
+    width: 16px; 
+    height: 16px;
+}
+.icon-pageedit
+{
+	display: block;
+    background:url(images/icon-pageedit.png);
+    width: 16px; 
+    height: 16px;
+}
+.icon-pagedelete
+{
+	display: block;
+    background:url(images/icon-pagedelete.png);
+    width: 16px; 
+    height: 16px;
+}
+.icon-icon-pagesm
+{
+	display: block;
+	background:url(images/icon-pagesm.png);
+	width: 16px; 
+    height: 16px;
+}
+.icon-addpage
+{
+	display: block;
+	background:url(images/icon-addpage.png);
+	width: 16px; 
+    height: 16px;
+}
+.button-send
+{
+	display: block;
+	background:url(images/button-send.png);
+
+}
+.create-repository
+{
+	display: block;
+	background:url(images/sql.png);
+	width: 16px; 
+	height: 16px;
+}
+.create-user
+{
+	display: block;
+	background:url(images/icon-createuser.png);
+	width: 16px; 
+	height: 16px;
+}
+.create-role
+{
+	display: block;
+	background:url(images/icon-creategroup.png);
+	width:16px; 
+	height:16px;
+}
+.icon-role
+{
+	display: block;
+	background:url(images/icon-group.png);
+	width:16px; 
+	height:16px;
+}
+.icon-profile-export
+{
+	display: block;
+	background:url(images/icon-profile-export.png);
+	width:16px; 
+	height:16px;
+}
+.icon-email-export
+{
+	display: block;
+	background:url(images/icon-email-export.png);
+	width:22px; 
+	height:13px;
+}
+
+.icon-remove
+{
+	display: block;
+	background:url(images/icon-remove.png);
+	width:16px; 
+	height:16px;
+}
+.icon-blog
+{
+	display: block;
+	background:url(images/icon-blog.png);
+	width:16px; 
+	height:16px;
+}
+.button-edit
+{
+	display: block;
+	background:url(images/gridedit.gif);
+	width:50px; 
+	height:17px;
+}
+.icon-home
+{
+	display: block;
+	background:url(images/icon-home.png);
+	width:16px; 
+	height:16px;
+}

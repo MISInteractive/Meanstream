@@ -1,0 +1,85 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.SalesRepsViewModel 
+@{
+    Layout = null;
+}
+
+<div class="row">
+    <div class="columns default-12">
+        <div class="ui-flex-container">
+            Select your state below to locate your local Sales Territory Manager.
+            <br /><br />
+        </div>
+        <div class="ui-flex-container" data-role="find-dealer">
+            <h5 class="margin-right">LOCATE BY STATE</h5>
+            <div class="ui-form-dropdown">
+                <select id="states">
+                    <option value="select">Select State</option>
+                    @foreach (JObject obj in Model.States)
+                    {
+                        string selected = "";
+                        if (Request.Params["q"] != null && Request.Params["q"].ToString() == obj["State"].ToString())
+                        {
+                            selected = "selected";
+                        }
+                        <option value="@obj["State"].ToString()" @selected>@obj["State"].ToString()</option>
+                    }
+                </select>
+            </div>
+        </div>
+   </div>
+</div>
+@if (Model.ShowResults) 
+{
+<div class="row">
+    <div class="columns default-12">
+        <div class="ui-flex-container">
+            <span class="dark-red" data-role="results-count">@Model.SalesReps.Count</span>&nbsp;
+            <span>Result(s) for Dealers in</span>
+            &nbsp;<span class="dark-red">@Model.State</span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="columns default-12">
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="columns default-12 ui-flex-container">
+        <ul class="ui-flex-grid">
+            @foreach (JObject obj in Model.SalesReps)
+            {
+                <li>
+                    <div class="store-name">@obj["Name"].ToString()</div>
+                    <div>
+                        @obj["State"].ToString()
+                        @if (obj["Phone"] != null && obj["Phone"].ToString() != "NULL")
+                        {
+                            <br /><span>* @obj["Phone"].ToString()</span>
+                        }
+                    </div>
+                    <div class="store-phone">@obj["Address"].ToString()</div>
+                    @if (obj["City"] != null) 
+                    { 
+                        <div class="store-phone">@obj["City"].ToString()</div>
+                    }
+                    <div><a class="store-link" href="mailto:@obj["Zip"].ToString().Replace("EMAIL:","")">@obj["Zip"].ToString()</a></div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#states").change(function () {
+            var str = "";
+            $("select option:selected").each(function () {
+                str += $(this).text() + " ";
+                window.location.href = "/find-your-dealer?q=" + str;
+            });
+        });
+    });
+</script>

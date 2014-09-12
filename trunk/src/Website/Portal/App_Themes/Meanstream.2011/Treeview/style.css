@@ -1,0 +1,67 @@
+﻿.msTreeheader {
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #404040;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+.msTreelinks {
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #afafaf;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  padding-left: 2px;
+}
+.msTreelinks a{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #656565;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+.msTreelinks a:link{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #404040;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+.msTreelinks a:visited{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #404040;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+.msTreelinks a:hover{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #49627d !Important;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+
+.msTreelinks a:selected{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #49627d !Important;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}
+
+.msTreelinksSelected{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #49627d !Important;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+}

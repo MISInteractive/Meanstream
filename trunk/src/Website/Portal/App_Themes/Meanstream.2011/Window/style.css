@@ -1,0 +1,445 @@
+﻿/* Classes ms-black theme Window */
+.simplemodal-overlay {background-color:#999;}
+.simplemodal-container {background-color:transparent; border:0px solid #000000;padding-left:0px;padding-right:0px;padding-bottom:0px;padding-top:0px;}
+.msWindowmodalBackground
+{
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	
+}
+
+.msWindowtopLeftCorner
+{
+    background-image:url(images/left_top_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:31px;
+    float:left;
+}
+
+.msWindowtopRightCorner
+{
+    background-image:url(images/right_top_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:31px;
+    float:left;
+    
+}
+
+.msWindowtopHeader
+{
+    background-image:url(images/header_top.png);
+    background-repeat:repeat-x;
+    height:31px;
+    float:left;
+}
+
+.msWindowleftContent
+{
+    background-image:url(images/left_content.png);
+    background-repeat:repeat-y;
+    width:8px;
+    height:8px;
+    float:left;
+}
+.msWindowrightContent
+{
+    background-image:url(images/right_content.png);
+    background-repeat:repeat-y;
+    width:8px;
+    height:8px;
+    float:left;
+}
+
+.msWindowmainContent
+{
+    background-color:White;
+    float:left;
+}
+
+.msWindowbottomLeftCorner
+{
+    background-image:url(images/left_bottom_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:6px;
+    float:left;
+}
+
+.msWindowbottomRightCorner
+{
+    background-image:url(images/right_bottom_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:6px;
+    float:left;
+    
+}
+
+.msWindowbottomFooter
+{
+    background-image:url(images/footer_bottom.png);
+    background-repeat:repeat-x;
+    height:6px;
+    float:left;
+    
+    
+}
+.msWindowfooterContent
+{
+    background-color:#2C2C2C;
+    background-repeat:repeat-x;
+    border-top:2px;
+    border-top-style:solid;
+    border-top-color:#080808;
+    float:left;
+    height:22px;
+}
+
+.msWindowwindowClose 
+{
+  
+   float:right;
+   margin-right:12px;
+   margin-top:10px;
+}
+
+.msWindowcloseButton 
+{
+   background-image:url(images/windowclose.gif);
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   border-width:0px;
+   border:0px;
+  
+   
+}
+.msWindowcloseButton a
+{
+   background-image:url(images/windowclose.gif); 
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   border-width:0px;
+   border:0px;
+}
+.msWindowcloseButton:hover
+{
+   background-image:url(images/windowcloseover.gif); 
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   cursor:pointer;
+   border-width:0px;
+   border:0px;
+}
+.msWindowwindowIcon
+{
+   margin-top:10px;
+   float:left;
+}
+.msWindowwindowTitle
+{
+   margin-top:10px;
+   float:left;
+   font-weight:bold;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:12px;
+   color:#D7D7D7;
+   margin-left:5px;
+}
+.msWindowwindowProgress
+{
+   background-image:url(images/loading.gif); 
+   background-repeat:no-repeat;
+   width:16px;
+   height:16px;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:10px;
+   color:#D7D7D7;
+   margin-left:5px;
+   float:left;
+  
+}
+
+.msWindowwindowURL
+{
+   margin-top:2px;
+   float:left;
+   font-weight:normal;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:12px;
+   color:#D7D7D7;
+   margin-left:10px;
+}
+
+/* END */
+
+
+/* Classes for calling Black ThemeProperty of ms-black theme */
+
+
+/* Classes ms-black theme Window */
+
+
+.Black .msWindowtopLeftCorner
+{
+    background-image:url(images/left_top_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:31px;
+    float:left;
+}
+
+.Black .msWindowtopRightCorner
+{
+    background-image:url(images/right_top_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:31px;
+    float:left;
+    
+}
+
+.Black .msWindowtopHeader
+{
+    background-image:url(images/header_top.png);
+    background-repeat:repeat-x;
+    height:31px;
+    float:left;
+}
+
+.Black .msWindowleftContent
+{
+    background-image:url(images/left_content.png);
+    background-repeat:repeat-y;
+    width:8px;
+    height:24px;
+    float:left;
+}
+.Black .msWindowrightContent
+{
+    background-image:url(images/right_content.png);
+    background-repeat:repeat-y;
+    width:8px;
+    height:24px;
+    float:left;
+}
+
+.Black .msWindowmainContent
+{
+    background-color:White;
+    float:left;
+}
+
+.Black .msWindowbottomLeftCorner
+{
+    background-image:url(images/left_bottom_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:6px;
+    float:left;
+}
+
+.Black .msWindowbottomRightCorner
+{
+    background-image:url(images/right_bottom_corner.png);
+    background-repeat:no-repeat;
+    width:8px;
+    height:6px;
+    float:left;
+    
+}
+
+.Black .msWindowbottomFooter
+{
+    background-image:url(images/footer_bottom.png);
+    background-repeat:repeat-x;
+    height:6px;
+    float:left;
+     
+    
+}
+
+.Black .msWindowfooterContent
+{
+    background-color:#2C2C2C;
+    background-repeat:repeat-x;
+    border-top:2px;
+    border-top-style:solid;
+    border-top-color:#080808;
+    float:left;
+    height:22px;
+}
+.Black .msWindowfooterContentElement
+{
+    background-color:#000;
+    background-repeat:repeat-x;
+    border-top:0px;
+    border-top-style:solid;
+    border-top-color:#080808;
+    border-bottom:1px;
+    border-bottom-style:solid;
+    border-bottom-color:#000;
+    float:left;
+    height:22px;
+}
+.Black .msWindowwindowClose 
+{
+  
+   float:right;
+   margin-right:12px;
+   margin-top:10px;
+}
+
+.Black .msWindowcloseButton 
+{
+   background-image:url(images/windowclose.gif);
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   border-width:0px;
+   border:0px;
+  float:left;
+   
+}
+.Black .msWindowcloseButton a
+{
+   background-image:url(images/windowclose.gif); 
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+.Black .msWindowcloseButton:hover
+{
+   background-image:url(images/windowcloseover.gif); 
+   background-repeat:no-repeat;
+   width:10px;
+   height:8px;
+   cursor:pointer;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+
+
+.Black .msWindowexpandButton 
+{
+   background-image:url(images/expand.png);
+   background-repeat:no-repeat;
+   width:11px;
+   height:9px;
+   border-width:0px;
+   border:0px;
+   float:left;
+   padding-right:15px;
+  
+   
+}
+.Black .msWindowexpandButton a
+{
+   background-image:url(images/expand.png); 
+   background-repeat:no-repeat;
+   width:11px;
+   height:9px;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+.Black .msWindowexpandButton:hover
+{
+   background-image:url(images/expand.png); 
+   background-repeat:no-repeat;
+   width:11px;
+   height:9px;
+   cursor:pointer;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+.Black .msWindowcollapseButton 
+{
+   background-image:url(images/collapse.png);
+   background-repeat:no-repeat;
+   width:13px;
+   height:12px;
+   border-width:0px;
+   border:0px;
+   float:left;
+   padding-right:15px;
+  
+   
+}
+.Black .msWindowcollapseButton a
+{
+   background-image:url(images/collapse.png); 
+   background-repeat:no-repeat;
+   width:13px;
+   height:12px;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+.Black .msWindowcollapseButton:hover
+{
+   background-image:url(images/collapse.png); 
+   background-repeat:no-repeat;
+   width:13px;
+   height:12px;
+   cursor:pointer;
+   border-width:0px;
+   border:0px;
+   float:left;
+}
+.Black .msWindowwindowIcon
+{
+   margin-top:10px;
+   float:left;
+}
+.Black .msWindowwindowTitle
+{
+   margin-top:10px;
+   float:left;
+   font-weight:bold;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:12px;
+   color:#D7D7D7;
+   margin-left:5px;
+}
+.Black .msWindowwindowProgress
+{
+   background-image:url(images/loading.gif); 
+   background-repeat:no-repeat;
+   width:16px;
+   height:16px;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:10px;
+   color:#D7D7D7;
+   margin-left:5px;
+   float:left;
+  
+}
+
+.Black .msWindowwindowURL
+{
+   margin-top:2px;
+   float:left;
+   font-weight:normal;
+   font-family:"segoe ui",arial,sans-serif;
+   font-size:12px;
+   color:#D7D7D7;
+   margin-left:10px;
+   
+}
+.Black .msWindowDisplayNone
+{
+   display:none;
+}
+
+/* END */

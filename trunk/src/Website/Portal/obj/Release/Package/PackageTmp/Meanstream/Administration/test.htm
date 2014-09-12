@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+  <script src="/scripts/jquery-1.6.4.js" type="text/javascript"></script>
+  
+ <script src="/scripts/KendoUI/kendo.all.min.js" type="text/javascript"></script>
+<link href="/scripts/KendoUI/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="/scripts/KendoUI/kendo.metro.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Meanstream/UI/Services/Meanstream.UI.Models.js" type="text/javascript"></script>
+    <script>
+
+        $().ready(function () {
+
+            var model = Meanstream.UI.Models.Role.findAll();
+            var $pageGrid = $('#Grid');
+            $pageGrid.kendoGrid({
+                dataSource: {
+                    data: model,
+                    pageSize: 10,
+
+                    schema: {
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { type: "string", nullable: true },
+                                Name: { type: "string" },
+                                Description: { type: "string" },
+                                AutoAssignment: { type: "string" },
+                                IsPublic: { type: "string" }
+
+                            }
+                        }
+                    }
+                },
+
+                pageable: true,
+                scrollable: false,
+                editable: true,
+                batch: true,
+
+                columns: [{
+
+                    width: "20%",
+                    title: "role",
+                    template: "<span class='rolename'>#=Name#</span>"
+
+                }, {
+                    field: "Description",
+                    width: "50%",
+                    title: "description"
+                },
+
+            {
+                field: "AutoAssignment",
+                width: "10%",
+                title: "auto assignment"
+            },
+             {
+                 field: "IsPublic",
+                 width: "10%",
+                 title: "public"
+             },
+             {
+                 command: "destroy",
+                 width: "10%",
+                 title: "  "
+             }
+           ],
+                remove: function (e) {
+                    if (confirm('The role will be deleted permanently.')) {
+
+                    }
+                    //var id = e.model.data.FormId;
+                    //Dynamicforms.Models.Form.destroy(id);
+
+                }
+            });
+
+        });
+        function bindGrid(model) {
+          
+        }
+</script>
+<div id="Grid" style="width:100%;outline:none;"></div>
+</body>
+</html>

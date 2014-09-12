@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9B4EABF3-99F7-4F7D-BC3C-0440FEA5ED62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Meanstream.Portal</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Meanstream.Portal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Meanstream.Portal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net, Version=2.3.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Data.SqlClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Web.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\ComponentModel\AbstractContainer.vb" />
+    <Compile Include="Library\ComponentModel\ComponentBuilderCollection.vb" />
+    <Compile Include="Library\ComponentModel\TransientComponentBuilder.vb" />
+    <Compile Include="Library\ComponentModel\SingletonComponentBuilder.vb" />
+    <Compile Include="Library\ComponentModel\ComponentFactory.vb" />
+    <Compile Include="Library\ComponentModel\ComponentLifeStyleType.vb" />
+    <Compile Include="Library\ComponentModel\ComponentType.vb" />
+    <Compile Include="Library\ComponentModel\ComponentTypeCollection.vb" />
+    <Compile Include="Library\ComponentModel\IComponentBuilder.vb" />
+    <Compile Include="Library\ComponentModel\IComponentInstaller.vb" />
+    <Compile Include="Library\ComponentModel\IContainer.vb" />
+    <Compile Include="Library\ComponentModel\ProviderInstaller.vb" />
+    <Compile Include="Library\ComponentModel\SimpleContainer.vb" />
+    <Compile Include="Library\Core\AppConstants.vb" />
+    <Compile Include="Library\Core\Content\Content.vb" />
+    <Compile Include="Library\Core\Content\ContentType.vb" />
+    <Compile Include="Library\Core\Content\ISearchable.vb" />
+    <Compile Include="Library\Core\Content\PageManager.vb" />
+    <Compile Include="Library\Core\Content\PagePermission.vb" />
+    <Compile Include="Library\Core\Content\ContentService.vb" />
+    <Compile Include="Library\Core\Content\PagePermissionManager.vb" />
+    <Compile Include="Library\Core\Content\PageVersionPermission.vb" />
+    <Compile Include="Library\Core\Content\PageVersion.vb" />
+    <Compile Include="Library\Core\Content\PageVersionManager.vb" />
+    <Compile Include="Library\Core\Content\PageVersionPermissionManager.vb" />
+    <Compile Include="Library\Core\Data\DataProvider.vb" />
+    <Compile Include="Library\Core\Data\DataProviderException.vb" />
+    <Compile Include="Library\Core\Data\DataService.vb" />
+    <Compile Include="Library\Core\Data\IDataProvider.vb" />
+    <Compile Include="Library\Core\Data\PropertyTypeMismatchException.vb" />
+    <Compile Include="Library\Core\Data\ProviderSettings.vb" />
+    <Compile Include="Library\Core\EntityModel\Document.vb" />
+    <Compile Include="Library\Core\EntityModel\EntityBase.vb" />
+    <Compile Include="Library\Core\EntityModel\EntityField.vb" />
+    <Compile Include="Library\Core\EntityModel\IEntity.vb" />
+    <Compile Include="Library\Core\EntityModel\SerializableEntityField.vb" />
+    <Compile Include="Library\Core\Query\IQuery.vb" />
+    <Compile Include="Library\Core\Query\IQueryBuilder.vb" />
+    <Compile Include="Library\Core\Query\SqlQueryBuilder.vb" />
+    <Compile Include="Library\Core\Query\SqlUtil.vb" />
+    <Compile Include="Library\Core\Repository\IRepositoryProvider.vb" />
+    <Compile Include="Library\Core\Repository\ProviderSettings.vb" />
+    <Compile Include="Library\Core\Repository\Query.vb" />
+    <Compile Include="Library\Core\Repository\Repository.vb" />
+    <Compile Include="Library\Core\Repository\RepositoryException.vb" />
+    <Compile Include="Library\Core\Repository\RepositoryProvider.vb" />
+    <Compile Include="Library\Core\Repository\RepositoryService.vb" />
+    <Compile Include="Library\Core\Services\PaymentGateway\SubscriptionProvider.vb" />
+    <Compile Include="Library\Core\Services\PaymentGateway\SubscriptionRequest.vb" />
+    <Compile Include="Library\Core\Services\Scheduling\SchedulingException.vb" />
+    <Compile Include="Library\Core\Services\Scheduling\Task.vb" />
+    <Compile Include="Library\Core\Services\Scheduling\SchedulingProvider.vb" />
+    <Compile Include="Library\Core\Services\SearchEngineSiteMap\SiteMapXML.vb" />
+    <Compile Include="Library\Core\Services\SearchEngineSiteMap\SiteMapXMLNode.vb" />
+    <Compile Include="Library\Core\Services\Search\DataProvider.vb" />
+    <Compile Include="Library\Core\Services\Search\IndexingProvider.vb" />
+    <Compile Include="Library\Core\Services\Search\SearchEngineService.vb" />
+    <Compile Include="Library\Core\Services\Search\Document.vb" />
+    <Compile Include="Library\Core\Services\Search\Field.vb" />
+    <Compile Include="Library\Core\Content\Skin.vb" />
+    <Compile Include="Library\Core\Content\SkinManager.vb" />
+    <Compile Include="Library\Core\Content\SkinZone.vb" />
+    <Compile Include="Library\Core\Extensibility\Attribute.vb" />
+    <Compile Include="Library\Core\Extensibility\AttributeEntity.vb" />
+    <Compile Include="Library\Core\Extensibility\AttributeEntityManager.vb" />
+    <Compile Include="Library\Core\Extensibility\AttributeService.vb" />
+    <Compile Include="Library\Core\Extensibility\IAttributeEntity.vb" />
+    <Compile Include="Library\Core\Content\Page.vb" />
+    <Compile Include="Library\Core\Membership\MembershipService.vb" />
+    <Compile Include="Library\Core\Membership\Permission.vb" />
+    <Compile Include="Library\Core\Membership\PermissionManager.vb" />
+    <Compile Include="Library\Core\Membership\Preference.vb" />
+    <Compile Include="Library\Core\Membership\PreferenceManager.vb" />
+    <Compile Include="Library\Core\Membership\Role.vb" />
+    <Compile Include="Library\Core\Membership\RoleManager.vb" />
+    <Compile Include="Library\Core\Membership\UserPreference.vb" />
+    <Compile Include="Library\Core\Messaging\MessageManager.vb" />
+    <Compile Include="Library\Core\PortalBase.vb" />
+    <Compile Include="Library\Core\Portal.vb" />
+    <Compile Include="Library\Core\ExceptionHandling\ConfigurationException.vb" />
+    <Compile Include="Library\Core\ExceptionHandling\ErrorPageElement.vb" />
+    <Compile Include="Library\Core\ExceptionHandling\LoggingElement.vb" />
+    <Compile Include="Library\Core\ExceptionHandling\NotificationElement.vb" />
+    <Compile Include="Library\Core\ExceptionHandling\PortalExceptionSection.vb" />
+    <Compile Include="Library\Core\Extensibility\Setting.vb" />
+    <Compile Include="Library\Core\Instrumentation\ExceptionTraceLogger.vb" />
+    <Compile Include="Library\Core\Providers\Provider.vb" />
+    <Compile Include="Library\Core\Providers\ProviderConfiguration.vb" />
+    <Compile Include="Library\Core\Providers\ConfigurationHandler.vb" />
+    <Compile Include="Library\HTTPHandlers\PortalSiteMapHandler.vb" />
+    <Compile Include="Library\HTTPHandlers\SingleSignOnHandler.vb" />
+    <Compile Include="Library\HttpModules\PortalErrorHandlerModule.vb" />
+    <Compile Include="Library\Core\Instrumentation\PortalTrace.vb" />
+    <Compile Include="Library\Core\Instrumentation\PortalTraceListener.vb" />
+    <Compile Include="Library\Core\Instrumentation\TraceLevelAttribute.vb" />
+    <Compile Include="Library\Core\Instrumentation\TraceLevel.vb" />
+    <Compile Include="Library\Core\ISession.vb" />
+    <Compile Include="Library\Core\Messaging\ApplicationMessage.vb" />
+    <Compile Include="Library\Core\Messaging\ApplicationMessageEventArgs.vb" />
+    <Compile Include="Library\Core\Messaging\ApplicationMessageType.vb" />
+    <Compile Include="Library\Core\Messaging\ApplicationMessagingManager.vb" />
+    <Compile Include="Library\Core\Messaging\Message.vb" />
+    <Compile Include="Library\Core\Messaging\MessageEventArgs.vb" />
+    <Compile Include="Library\Core\Messaging\MessageType.vb" />
+    <Compile Include="Library\Core\Messaging\MessagingService.vb" />
+    <Compile Include="Library\HttpModules\PortalContextModule.vb" />
+    <Compile Include="Library\Providers\RepositoryProviders\RepositoryProvider\Provider.vb" />
+    <Compile Include="Library\Providers\SchedulingProviders\PortalScheduler\ScheduleTask.vb" />
+    <Compile Include="Library\Core\Services\Scheduling\TaskExecuteEventArgs.vb" />
+    <Compile Include="Library\Core\Services\Scheduling\SchedulingService.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SecUtility.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SqlConnectionHelper.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SqlMembershipProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SqlProfileProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SqlRoleProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\AspNetMembershipProvider\SR.vb" />
+    <Compile Include="Library\Providers\SchedulingProviders\PortalScheduler\SchedulingProvider.vb" />
+    <Compile Include="Library\Providers\SearchProviders\LuceneDataStore\SearchDataStore.vb" />
+    <Compile Include="Library\Providers\SearchProviders\PortalIndexer\IPageProcessor.vb" />
+    <Compile Include="Library\Providers\SearchProviders\PortalIndexer\PageProcessor.vb" />
+    <Compile Include="Library\Core\Services\Search\PageState.vb" />
+    <Compile Include="Library\Providers\SearchProviders\PortalIndexer\SearchIndexProvider.vb" />
+    <Compile Include="Library\Providers\SearchProviders\PortalIndexer\Spider.vb" />
+    <Compile Include="Library\Core\Session.vb" />
+    <Compile Include="Library\Core\Utilities\AppUtility.vb" />
+    <Compile Include="Library\Core\Instrumentation\ExceptionEventLogger.vb" />
+    <Compile Include="Library\Core\Utilities\CacheUtility.vb" />
+    <Compile Include="Library\Core\Utilities\Is.vb" />
+    <Compile Include="Library\Core\Utilities\NameObjectCollection.vb" />
+    <Compile Include="Library\Core\Utilities\RegExUtility.vb" />
+    <Compile Include="Library\Core\Utilities\SeoUtility.vb" />
+    <Compile Include="Library\Core\Utilities\StringUtility.vb" />
+    <Compile Include="Library\Core\Utilities\WeakReference.vb" />
+    <Compile Include="Library\Core\PortalContext.vb" />
+    <Compile Include="Library\Core\WidgetFramework\IModule.vb" />
+    <Compile Include="Library\Core\WidgetFramework\IModuleDTO.vb" />
+    <Compile Include="Library\Core\WidgetFramework\IModuleVersion.vb" />
+    <Compile Include="Library\Core\WidgetFramework\Widget.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Core\WidgetFramework\WidgetManager.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetPermission.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetPermissionManager.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetService.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetVersion.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetVersionControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Core\WidgetFramework\WidgetVersionManager.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetVersionPermission.vb" />
+    <Compile Include="Library\Core\WidgetFramework\WidgetVersionPermissionManager.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SecUtility.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SqlConnectionHelper.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SqlMembershipProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SqlProfileProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SqlRoleProvider.vb" />
+    <Compile Include="Library\Providers\MembershipProviders\WordPressMembershipProvider\SR.vb" />
+    <Compile Include="Library\Providers\SiteMapProviders\PortalSiteMapProvider\IndexedSiteMapProvider.vb" />
+    <Compile Include="Library\Providers\DataProviders\SqlServerDataProvider\Provider.vb" />
+    <Compile Include="Library\Providers\DataProviders\SqlServerDataProvider\Serializer.vb" />
+    <Compile Include="Library\Widgets\Search\WidgetBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\Search\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Library\Core\Membership\UserProfile.vb" />
+    <Compile Include="Library\WebControls\Menu.vb" />
+    <Compile Include="Library\Web\UI\Page.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Web\UI\Preview.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Web\UI\Version.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Web\UI\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Web\Services\WebServiceBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Library\Web\Services\WidgetService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Library\Providers\SiteMapProviders\PortalSiteMapProvider\SqlSiteMapProvider.vb" />
+    <Compile Include="Library\Widgets\SiteMap\WidgetBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\SiteMap\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\UserControl\WidgetBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\UserControl\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\UserControl\WidgetModule.vb" />
+    <Compile Include="Library\Widgets\FreeText\WidgetBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\FreeText\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\FreeText\WidgetModule.vb" />
+    <Compile Include="Library\Widgets\Login\WidgetBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Widgets\Login\WidgetEditBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Lucene.Net.dll" />
+    <Content Include="bin\Meanstream.Portal.Core.Data.dll" />
+    <Content Include="bin\Meanstream.Portal.Core.Data.SqlClient.dll" />
+    <Content Include="bin\Meanstream.Portal.Core.Entities.dll" />
+    <Content Include="bin\Meanstream.Web.UI.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder2.dll" />
+    <EmbeddedResource Include="Library\Web\UI\drop-bg.jpg" />
+    <EmbeddedResource Include="Library\Web\UI\Meanstream.Portal.Web.UI.pageEditor.js" />
+    <EmbeddedResource Include="Library\Web\UI\Meanstream.Portal.Web.UI.widget.js" />
+    <EmbeddedResource Include="Library\Web\UI\pane-bar-bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

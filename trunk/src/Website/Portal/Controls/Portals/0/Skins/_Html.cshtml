@@ -1,0 +1,85 @@
+﻿@{
+   bool isVersion = ViewData["Widget"].GetType() == typeof(Meanstream.Portal.Core.WidgetFramework.WidgetVersion) ? true : false;
+   bool isPreview = HttpContext.Current.Request.Url.OriginalString.Contains("/preview/page/") ? true : false;
+   bool isEditable = HttpContext.Current.Request.Url.OriginalString.Contains("/edit/page/") ? true : false;
+}
+
+@if (!isVersion)
+{
+    //published content
+    Meanstream.Portal.Core.WidgetFramework.Widget widget = (Meanstream.Portal.Core.WidgetFramework.Widget)ViewData["Widget"];
+    Meanstream.Portal.Core.Widgets.FreeText.WidgetModule widgetModule = (Meanstream.Portal.Core.Widgets.FreeText.WidgetModule)widget.UserControl.GetIModuleDTO();
+    
+    @Html.Raw(widgetModule.Content.Text)
+}
+
+@if (isPreview || isEditable)
+{
+    var hcaption = "";
+    var hcaption_style = "";
+    var hcaption_hide = "hide";
+
+    //version content
+    Meanstream.Portal.Core.WidgetFramework.WidgetVersion widget = (Meanstream.Portal.Core.WidgetFramework.WidgetVersion)ViewData["Widget"];
+    Meanstream.Portal.Core.Widgets.FreeText.WidgetModule widgetModule = (Meanstream.Portal.Core.Widgets.FreeText.WidgetModule)widget.UserControl.GetIModuleDTO();
+
+    if (isEditable)
+    {
+        hcaption = "hcaption";
+        hcaption_style = "min-height: 25px;";
+        hcaption_hide = "";
+    }
+ 
+    if (isEditable)
+    {
+        <div id="#html_@widgetModule.Content.Id" class="@hcaption" style="@hcaption_style">@Html.Raw(widgetModule.Content.Text)</div>
+    }
+    else 
+    {
+        @Html.Raw(widgetModule.Content.Text)
+    }
+
+    if (isEditable)
+    {
+    <div id="html_@widgetModule.Content.Id" class="cap-overlay @hcaption_hide">
+        <h5></h5>
+        <div class="content">
+            <a id="link_modal_edit_@widgetModule.Content.Id" href="#modal_edit_@widgetModule.Content.Id" class="m-button">Edit</a>
+            <a id="link_modal_settings_@widgetModule.Content.Id" href="#modal_settings_@widgetModule.Content.Id" class="m-button">Settings</a>
+        </div>
+    </div>
+    <div class="remodal modal_edit_@widgetModule.Content.Id" data-remodal-id="modal_edit_@widgetModule.Content.Id">
+        <div>
+            <iframe src="/Meanstream/Widgets/FreeText/Admin.aspx?WidgetId=@widgetModule.ModuleVersionId"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="1000" height="650"></iframe>
+        </div>
+    </div>
+    <div class="remodal modal_settings_@widgetModule.Content.Id" data-remodal-id="modal_settings_@widgetModule.Content.Id">
+        <div>
+            <iframe src="/Meanstream/Widgets/Settings/Module.aspx?ctl=Default&ModuleId=@widgetModule.ModuleVersionId"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="530" height="460"></iframe>
+        </div>
+    </div>
+    <script language="javascript">
+    $(document).ready(function () {
+        $("#link_modal_edit_@widgetModule.Content.Id").click(function () {
+            var selector = '[data-remodal-id=modal_edit_@widgetModule.Content.Id]';
+            var inst = $.remodal.lookup[$(selector).data('remodal')];
+            inst.open();
+            window.parent.$('html,body').animate({ scrollTop: Math.floor($(window).height() / 3) }, 800);
+        });
+        $("#link_modal_settings_@widgetModule.Content.Id").click(function () {
+            var inst = $.remodal.lookup[$('[data-remodal-id=modal_settings_@widgetModule.Content.Id]').data('remodal')];
+            inst.open();
+            window.parent.$('html,body').animate({ scrollTop: Math.floor($(window).height() / 3) }, 800);
+        });
+        $(document).on('closed', '.modal_edit_@widgetModule.Content.Id', function () {
+            window.parent.location.href = window.parent.location.href;
+        });
+        $(document).on('closed', '.modal_settings_@widgetModule.Content.Id', function () {
+            window.parent.location.href = window.parent.location.href;
+        });
+    });
+</script>
+    }
+}

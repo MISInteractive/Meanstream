@@ -1,0 +1,76 @@
+.meanstream_tooltip      
+{
+	display:none;     
+	
+} 
+.meanstream_tooltip.bottom      
+{
+	
+}
+
+.meanstream_tooltip_1x1 {
+   background:url(images/10x10.gif);  
+   display: block;
+   height: 1px;
+   width: 1px;
+}
+
+.meanstream_tooltip_top  {
+   background:url(images/tooltip-white-top.png);  
+   display: block;
+   background-repeat:repeat;
+   height: 1px;
+}
+
+.meanstream_tooltip_left {
+    	background:url(images/tooltip-white-left.png);  
+	background-position:center left;
+	background-repeat:repeat;
+	width: 2px;
+	height: 100%;
+ }
+ 
+.meanstream_tooltip_mid td {
+    background:url(images/tooltip-white-mid.png);  
+    display: block;
+	background-position:center center;
+	background-repeat:repeat;
+ }
+ 
+.meanstream_tooltip_right {
+    	background:url(images/tooltip-white-right.png);  
+	background-position:center right;
+	background-repeat:repeat;
+	width: 2px;
+	height: 100%;
+ }
+ 
+.meanstream_tooltip_bottomleft {
+    	background:url(images/tooltip-white-bottomleft.png);  
+    	display: block;
+	background-repeat:repeat;
+	width: 5px;
+	height: 15px;
+ }
+ 
+.meanstream_tooltip_bottommid {
+    	background:url(images/tooltip-white-bottommid.png);  
+    	display: block;
+	background-repeat:repeat;
+	height: 15px;
+ }
+ 
+.meanstream_tooltip_bottomright {
+    background:url(images/tooltip-white-bottomright.png);  
+    display: block;
+	background-repeat:repeat;
+	width: 5px;
+	height: 15px;
+ }
+
+.meanstream_tooltip_bottompoint {
+   background:url(images/tooltip-white-bottompoint.png);  
+   display: block;
+   height: 15px;
+   width: 29px;
+}

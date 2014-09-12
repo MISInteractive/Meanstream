@@ -1,0 +1,44 @@
+﻿.uploadifyQueueItem 
+{
+  font-size: 12px;
+  font-family  :"segoe ui",arial,sans-serif;
+  color:White;
+  margin-top: 0px;
+  padding: 10px;
+  width: 350px;
+  height:161px;
+  background: url(images/msprogressBg.png);
+  background-repeat:no-repeat;
+}
+.uploadifyError {
+	
+}
+.uploadifyQueueItem .cancel {
+ float: right;
+ padding-right:15px;
+}
+.uploadifyProgress {
+ background: url(images/msuploadboxgradient.jpg);
+ height:17px;
+ border-style:solid;
+ border-width:1px;
+ border-color:Black;
+ margin-top: 10px;
+ width: 320px;
+}
+.uploadifyProgressBar {
+ width: 1px;
+ height: 17px;
+ background: url(images/msbargradient.jpg);
+ background-repeat:repeat-x;
+}
+
+.msInputFile {
+ -moz-opacity:0 ;
+ filter:alpha(opacity: 0);
+ opacity: 0;
+ z-index: 2;
+}
+
+
+

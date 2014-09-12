@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F7EC7A30-01C2-4698-B853-01280C4B9CE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Meanstream.Portal.CRM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Meanstream.Portal.CRM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Meanstream.Portal.CRM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Meanstream.Portal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Data.SqlClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.Core.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.Core.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.CRM.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.CRM.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.CRM.Data.SqlClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.CRM.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Meanstream.Portal.CRM.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Meanstream.Portal.CRM.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.vb" />
+    <Compile Include="AccountManager.vb" />
+    <Compile Include="Appointment.vb" />
+    <Compile Include="AppointmentManager.vb" />
+    <Compile Include="CallManager.vb" />
+    <Compile Include="Calls.vb" />
+    <Compile Include="Campaign.vb" />
+    <Compile Include="CampaignManager.vb" />
+    <Compile Include="CampaignParticipant.vb" />
+    <Compile Include="CampaignStep.vb" />
+    <Compile Include="CellPhoneProvider.vb" />
+    <Compile Include="Contact.vb" />
+    <Compile Include="ContactManager.vb" />
+    <Compile Include="CRMService.vb" />
+    <Compile Include="Email.vb" />
+    <Compile Include="EmailManager.vb" />
+    <Compile Include="EmailPreference.vb" />
+    <Compile Include="Extensibility\AttributeEntity.vb" />
+    <Compile Include="Extensibility\AttributeEntityManager.vb" />
+    <Compile Include="Extensibility\AttributeService.vb" />
+    <Compile Include="Group.vb" />
+    <Compile Include="GroupManager.vb" />
+    <Compile Include="ICampaignTask.vb" />
+    <Compile Include="List.vb" />
+    <Compile Include="Mail.vb" />
+    <Compile Include="MailManager.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Participant.vb" />
+    <Compile Include="Reminder.vb" />
+    <Compile Include="ReminderDeliveryPreference.vb" />
+    <Compile Include="ReminderDeliveryType.vb" />
+    <Compile Include="ReminderType.vb" />
+    <Compile Include="Segment.vb" />
+    <Compile Include="SegmentManager.vb" />
+    <Compile Include="TextMessageGateway.vb" />
+    <Compile Include="TextMessageManager.vb" />
+    <Compile Include="TextMessage.vb" />
+    <Compile Include="Task.vb" />
+    <Compile Include="TaskManager.vb" />
+    <Compile Include="StoredEmail.vb" />
+    <Compile Include="StoredPhoneScript.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Meanstream.Portal.Core.Data.dll" />
+    <Content Include="bin\Meanstream.Portal.Core.Data.SqlClient.dll" />
+    <Content Include="bin\Meanstream.Portal.Core.Entities.dll" />
+    <Content Include="bin\Meanstream.Portal.CRM.Data.dll" />
+    <Content Include="bin\Meanstream.Portal.CRM.Data.SqlClient.dll" />
+    <Content Include="bin\Meanstream.Portal.CRM.Entities.dll" />
+    <Content Include="bin\Meanstream.Portal.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder2.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

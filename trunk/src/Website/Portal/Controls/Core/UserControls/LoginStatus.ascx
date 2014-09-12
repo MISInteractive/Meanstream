@@ -1,0 +1,2 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="LoginStatus.ascx.vb" Inherits="Controls_Core_UserControls_LoginStatus" %>
+<asp:LinkButton ID="btnStatus" runat="server" Text="sign in"></asp:LinkButton>

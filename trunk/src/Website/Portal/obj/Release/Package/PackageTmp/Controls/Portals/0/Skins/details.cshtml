@@ -1,0 +1,9 @@
+﻿@model Portal.Models.PortalPageViewModel
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Keywords = Model.MetaKeywords;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Id = Model.Id.ToString();
+}
+
+@Html.Action("Details", "Gallery")

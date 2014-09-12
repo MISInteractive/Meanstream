@@ -1,0 +1,201 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.GalleryViewModel
+@{
+    Layout = null;
+}
+
+<section class="outer">
+    @if (!Request.Url.AbsoluteUri.Contains("search"))
+{
+    var heading = Model.Heading.Replace("&", "").Replace(" ", "-").Replace("--", "-");
+    var header = "https://media.r3vstack.com/assets/somersetbayhome/categories/" + heading + ".jpg?width=1833"; //"/images/gallery-header.jpg"; 1332
+    
+    <div class="ui-flex-container img">
+        <div class="ui-flex-container border">          
+            @if (Model.Heading != "Transitions" && Model.Heading != "Express-Menu")
+            {
+                <div class="ui-flex-container absolute left top margin-left"><h1>@Model.Heading</h1></div>
+            }
+            
+            @if (Model.Heading == "Express-Menu")
+            {
+                <div class="left hide-for-touch" style="height: 710px; width: 719px;">
+                    <img src="https://media.r3vstack.com/assets/somersetbayhome/categories/express.png?height=710" style="height: 710px; width: 591px;" />
+                </div>
+                <div class="express-header right" style="height: 710px; width: 790px;">
+                    <br /><br />
+                    <h1>Express Menu</h1>
+                    <br /><br />
+                    <span class="express-text">
+                        Any item in this catalog marked Express<br />
+                        is apart of our "Express Menu" program and will typically be <br />
+                        10 - 12 week expedited delivery to our Somerset Bay Warehouse.
+                        <br /><br />
+                        In an effort to better serve our customer we have<br />
+                        greatly expanded our Express Menu offering <br />
+                        The Express Menu now represents a large majority of the<br />
+                        Somerset Bay product line.<br />
+                        We hope this expanded offering is a big help to you and <br />
+                        as always we thank you very much for your business. <br /><br />
+                        <div style="text-align: right; margin-right: 15px;">Somerset Bay</div>
+                        <span>
+
+                </div>
+            }
+            else 
+            {
+                <img src="@header">
+    
+            }
+        </div>
+    </div>
+    }
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container pagination">
+            @if (Model.Paging != null)
+            {
+                
+                int page_count = int.Parse(Model.Paging["page_count"].ToString());
+                int total_count = int.Parse(Model.Paging["total_count"].ToString());
+                int current_page = int.Parse(Model.Paging["page"].ToString());
+                int limit = int.Parse(Model.Paging["limit"].ToString());
+                var category = HttpUtility.UrlEncode(Model.Heading);
+                bool view_all = Request.Params["viewall"] == null ? true : false;
+                bool next = false;
+                bool prev = false;
+                
+                if (page_count > current_page) 
+                { 
+                    next = true;
+                }
+                if (current_page > 1 && page_count > 1) 
+                { 
+                    prev = true;  
+                }
+                
+                if (prev) 
+                {
+                    var prev_page = current_page - 1;
+                    <a href="/gallery?c=@category&page=@prev_page&limit=@limit">&lt;</a>
+                }
+
+                if (page_count > 1) 
+                { 
+                    for (int i = 1; page_count >= i; i++)
+                    {
+                        var class_active = current_page==i? "active" : "";
+                        <a class="@class_active" href="/gallery?c=@category&page=@i&limit=@limit">@i</a>
+                    }
+                }
+                
+                if (next)
+                {
+                    var next_page = current_page + 1;
+                    <a href="/gallery?c=@category&page=@next_page&limit=@limit">&gt;</a>
+                }
+
+                if (view_all && page_count > 1)
+                {
+                    <a href="/gallery?c=@category&viewall=true">View All</a>
+                }
+            }
+            else 
+            {
+                if (!Request.Url.AbsoluteUri.Contains("search"))
+                {        
+                    var category = HttpUtility.UrlEncode(Model.Heading);
+                    <a href="/gallery?c=@category">View By Page</a>
+                }
+            }
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-gallery">
+            @foreach (JObject obj in Model.Items)
+            {
+                var image = "https://media.r3vstack.com/assets/somersetbayhome/medium/" + obj["Image"].ToString() + ".jpg?height=360&width=360";//width=400
+                <div class="item">
+                    <a class="img-container" href="/details?id=@obj["@rid"].ToString().Replace("#", "")">
+                        <img src="@image">
+                    </a>
+                    <div class="descriptions" style="white-space: nowrap;">
+
+                        <a href="/details?id=@obj["@rid"].ToString().Replace("#", "")">
+                            @if (@obj["Express"].ToString() == "true")
+                            {   
+                                <img src="~/images/express-thumb.png" /><span>&nbsp;</span>
+                            }
+                        @obj["Name"].ToString().Replace("<br>", "")</a>
+                    </div>
+                </div>
+            } 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container pagination">
+                @if (Model.Paging != null)
+                {
+
+                    int page_count = int.Parse(Model.Paging["page_count"].ToString());
+                    int total_count = int.Parse(Model.Paging["total_count"].ToString());
+                    int current_page = int.Parse(Model.Paging["page"].ToString());
+                    int limit = int.Parse(Model.Paging["limit"].ToString());
+                    var category = HttpUtility.UrlEncode(Model.Heading);
+                    bool view_all = Request.Params["viewall"] == null ? true : false;
+                    bool next = false;
+                    bool prev = false;
+
+                    if (page_count > current_page)
+                    {
+                        next = true;
+                    }
+                    if (current_page > 1 && page_count > 1)
+                    {
+                        prev = true;
+                    }
+
+                    if (prev)
+                    {
+                        var prev_page = current_page - 1;
+                        <a href="/gallery?c=@category&page=@prev_page&limit=@limit">&lt;</a>
+                    }
+
+                    if (page_count > 1)
+                    {
+                        for (int i = 1; page_count >= i; i++)
+                        {
+                            var class_active = current_page == i ? "active" : "";
+                            <a class="@class_active" href="/gallery?c=@category&page=@i&limit=@limit">@i</a>
+                        }
+                    }
+
+                    if (next)
+                    {
+                        var next_page = current_page + 1;
+                        <a href="/gallery?c=@category&page=@next_page&limit=@limit">&gt;</a>
+                    }
+
+                    if (view_all && page_count > 1)
+                    {
+                        <a href="/gallery?c=@category&viewall=true">View All</a>
+                    }
+                }
+                else
+                {
+                    if (!Request.Url.AbsoluteUri.Contains("search"))
+                    {
+                        var category = HttpUtility.UrlEncode(Model.Heading);
+                        <a href="/gallery?c=@category">View By Page</a>
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+</section>

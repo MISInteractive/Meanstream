@@ -1,0 +1,37 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.MenuViewModel
+@{
+    Layout = null;
+}
+
+<nav class="stacked">
+    <div class="ui-toggle" data-role="toggle"></div>
+    <div class="touch-logo"><img src="/images/touch-logo.png"></div>
+    <div class="brand center">
+        <div class="logo"></div>
+    </div>
+    <section class="center">
+        <ul class="ui-menu">
+            <li class="has-dropdown">
+                <a>Somerset Bay Gallery</a>
+                <ul class="ui-dropdown">
+                    @foreach(JObject item in Model.SB) 
+                    {
+                        var param = HttpUtility.UrlEncode(item["Name"].ToString());
+                        if (item["Name"].ToString() == "Rugs" || item["Name"].ToString() == "Upholstery" || item["Name"].ToString() == "Flooring" || item["Name"].ToString() == "Finishes")
+                        {
+                            <li><a href="/@item["Name"].ToString().ToLower()">@item["Name"].ToString()</a></li>
+                        }
+                        else 
+                        {
+                            <li><a href="/gallery?c=@param">@item["Name"].ToString()</a></li>    
+                        }
+                    }
+                </ul>
+            </li>
+            <li><a href="/gallery?c=@Model.Transitions["Name"].ToString()">Transitions Gallery</a></li>
+            <li><a href="/gallery?c=Express-Menu">Express Menu</a></li>
+            <li><a href="/find-your-dealer">Find Your Dealer</a></li>
+        </ul>
+    </section>
+</nav>

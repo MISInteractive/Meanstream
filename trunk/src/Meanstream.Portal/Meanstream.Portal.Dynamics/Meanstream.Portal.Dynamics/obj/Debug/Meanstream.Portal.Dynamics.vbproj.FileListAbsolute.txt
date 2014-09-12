@@ -1,0 +1,16 @@
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Meanstream.Portal.Dynamics.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Meanstream.Portal.Dynamics.pdb
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Meanstream.Portal.Dynamics.xml
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\Resources.resources
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\Meanstream.Portal.Dynamics.dll
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\Meanstream.Portal.Dynamics.xml
+C:\Users\David\Repositories\Portal\4.0\Meanstream.Portal\Meanstream.Portal.Dynamics\Meanstream.Portal.Dynamics\obj\Debug\Meanstream.Portal.Dynamics.pdb

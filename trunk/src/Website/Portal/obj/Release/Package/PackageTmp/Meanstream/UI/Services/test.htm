@@ -1,0 +1,93 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+  
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="/scripts/KendoUI/kendo.all.min.js" type="text/javascript"></script>
+<link href="/scripts/KendoUI/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="/scripts/KendoUI/kendo.metro.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Meanstream/UI/Services/Meanstream.UI.Models.js" type="text/javascript"></script>
+<script>
+//NOTE using kendo transport to call the url directly doesn't work with asp.net forms webservices because the return data is xml
+    $().ready(function () {
+        var model = Meanstream.UI.Models.Page.findAll();
+        var $pageGrid = $('#pageGrid');
+        $pageGrid.kendoGrid({
+            dataSource: {
+                transport: {
+                    read: {
+                        // the remote service url
+                        url: "/Meanstream/UI/Services/UIServices.asmx/FindAll",
+
+
+                        dataType: "json"
+
+                        // additional parameters sent to the remote service
+                        //data: {
+                        // q: param
+                        // }
+                    }
+                },
+                pageSize: 10,
+
+                schema: {
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: { type: "string" },
+                            Path: { type: "string" },
+                            Skin: { type: "string" },
+                            VisibleFlag: { type: "string" },
+                            Author: { type: "string" },
+                            PublishedFlag: { type: "string" },
+                            PublishedDate: { type: "string" }
+                        }
+                    }
+                }
+            },
+
+            pageable: true,
+            scrollable: false,
+            sortable: true,
+            columns: [{
+                field: "Path",
+                width: "30%",
+                title: "path"
+
+            }, {
+                field: "Skin",
+                width: "20%",
+                title: "skin"
+            }, {
+                field: "VisibleFlag",
+                width: "10%",
+                title: "display in menu"
+            },
+            {
+                field: "Author",
+                width: "15%",
+                title: "author"
+            },
+            {
+                field: "PublishedFlag",
+                width: "10%",
+                title: "published"
+            },
+             {
+                 field: "PublishedDate",
+                 width: "15%",
+                 title: "published date"
+             }
+           ]
+        });
+
+    });
+
+</script>
+    <div id="pageGrid" style="width:100%;outline:none;"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@model Portal.Models.PortalPageViewModel 
+@{
+    string zone = (string) ViewData["Zone"];
+}
+
+@{
+    if (Model.IsEditable || Model.IsPreview)
+    {
+        List<Meanstream.Portal.Core.WidgetFramework.WidgetVersion> widgetVersions = Model.WidgetVersions.Where(p => p.Key == zone).FirstOrDefault().Value;
+
+        if (widgetVersions != null) 
+        {
+            foreach (Meanstream.Portal.Core.WidgetFramework.WidgetVersion widget in widgetVersions)
+            {
+                ViewData["Widget"] = widget;
+                Html.RenderPartial("~/Controls/Portals/0/Skins/_Html.cshtml", new ViewDataDictionary(ViewData));
+            }    
+        }
+        else 
+        {
+            <div align="center">[@zone]</div>
+        }
+    }
+    else
+    {
+        List<Meanstream.Portal.Core.WidgetFramework.Widget> widgets = Model.Widgets.Where(p => p.Key == zone).FirstOrDefault().Value;
+        foreach (Meanstream.Portal.Core.WidgetFramework.Widget widget in widgets)
+        {
+            ViewData["Widget"] = widget;
+            Html.RenderPartial("~/Controls/Portals/0/Skins/_Html.cshtml", new ViewDataDictionary(ViewData));
+        }
+    }
+}

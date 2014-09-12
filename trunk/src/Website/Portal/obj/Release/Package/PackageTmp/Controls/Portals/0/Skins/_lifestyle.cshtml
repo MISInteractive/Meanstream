@@ -1,0 +1,37 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.PressViewModel
+@{
+    Layout = null;
+}
+
+<div class="row">
+    <div class="columns default-12 press-gallery">
+        <div class="ui-flex-gallery">
+            @foreach (JObject obj in Model.Press)
+            {
+                <div class="item">
+                    @if (obj["Link"].ToString().Contains("http"))
+                    {
+                        <a class="img-container" href="@obj["Link"].ToString()" target="_blank">
+                            <img src="https://media.r3vstack.com/assets/somersetbayhome/press/thumb/@obj["Thumb"].ToString()">
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="img-container" href="https://media.r3vstack.com/assets/somersetbayhome/press/files/@obj["Link"].ToString()" target="_blank">
+                            <img src="https://media.r3vstack.com/assets/somersetbayhome/press/thumb/@obj["Thumb"].ToString()">
+                        </a>
+                    }
+                    <div class="descriptions">
+                        @if (obj["Publication"].ToString() != "NULL")
+                        {
+                            <a>@obj["Publication"].ToString()</a>
+                            <span>>@obj["PublicationDate"].ToString()</span>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

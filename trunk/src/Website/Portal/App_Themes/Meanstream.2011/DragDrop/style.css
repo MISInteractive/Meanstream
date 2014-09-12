@@ -1,0 +1,34 @@
+﻿.Black .meanstream_web_ui_dragdropcue {
+	min-height:300px;
+	min-width: 100px;
+	background:#fff;
+	min-height: 50px;
+	height: auto !important;
+}
+.Black .meanstream_web_ui_dragdrop {
+	margin:0px 0px  0px;
+	background:#fff;
+	border:1px solid #ddd;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.Black .meanstream_web_ui_dragdrophandle {
+	background: #000000;
+	cursor:move;
+}
+.Black .meanstream_web_ui_dragdropcontent
+{
+	font-weight: bold;
+}
+.Black .meanstream_web_ui_dragdropcue  .placeholder {
+	background: #f0f0f0;
+	border:1px dashed #ddd;
+}
+.Black .meanstream_web_ui_dragdrophandle.collapse {
+	background:#000000 url('collapse.png') no-repeat top right;
+}
+.Black .meanstream_web_ui_dragdrophandle .menu {
+	font-size:11px; font-weight: bold;
+	margin-right:30px; float:right;
+
+}

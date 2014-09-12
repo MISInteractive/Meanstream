@@ -1,0 +1,47 @@
+<%@ Master Language="VB" CodeFile="Module.master.vb" Inherits="Meanstream_UI_Skins_Module" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<Head id="Head1" runat="server">
+    
+</Head>
+<body class="pop-up-bg">
+    <script src="/Meanstream/UI/Scripts/wz_tooltip.js" type="text/javascript"></script>
+    <script src="/Meanstream/UI/Scripts/tip_balloon.js" type="text/javascript"></script>
+    
+    <form id="form1" runat="server">  
+        <Meanstream:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="MicrosoftAjax.js" Path="/Scripts/MicrosoftAjax/MicrosoftAjax.js" />
+                <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" Path="/Scripts/MicrosoftAjax/MicrosoftAjaxWebForms.js" />
+            </Scripts>
+        </Meanstream:ScriptManager>
+       
+        <script src="/scripts/jquery-1.6.4.js" type="text/javascript"></script>
+        <script src="/Scripts/ScriptLoader.js" type="text/javascript"></script>
+        <script src="/Scripts/Meanstream.Web.UI.Dependencies.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.blockUI.js" type="text/javascript"></script>
+        <script src="/App_Themes/Meanstream.2011/theme.js" type="text/javascript"></script>
+        <script src="/Scripts/Meanstream.ScriptServices.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+         <script src="/scripts/KendoUI/kendo.all.min.js" type="text/javascript"></script>
+<link href="/scripts/KendoUI/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="/scripts/KendoUI/kendo.metro.min.css" rel="stylesheet" type="text/css" />
+        <%--<script src="/Scripts/Resources/swfobject.js" type="text/javascript"></script>
+        <script src="/Scripts/Plugins/jquery.uploadify.js" type="text/javascript"></script>
+        <script src="/Scripts/Controls/Uploader/upload.js" type="text/javascript"></script>--%>
+    <script src="/scripts/msScriptUtilities.js" type="text/javascript"></script>
+        <script language="javascript" type="text/javascript">
+            //override default blockui positioning for modal window display
+            $.blockUI.defaults.css.top = '50px';
+            $.blockUI.defaults.css.left = '120px';
+       </script>
+
+        <div>
+            <asp:contentplaceholder id="CenterPane" runat="server">
+            </asp:contentplaceholder>
+        </div>
+    </form>
+</body>
+</html>

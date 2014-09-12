@@ -1,0 +1,51 @@
+﻿.pager ul.pages {
+display:table-cell;
+border:none;
+margin:0px;
+padding:0;
+font-family: Verdana, sans-serif;
+font-size: 13px;
+font-style: normal;
+color: #69788b;
+font-weight: normal;
+}
+
+.pager ul.pages li {
+list-style:none;
+float:left;
+
+
+padding-right:10px;
+}
+
+.pager ul.pages li:hover {
+
+}
+
+.pager ul.pages li.pgEmpty {
+display:none;
+}
+
+.pager ul.pages li.pgCurrent {
+font-family: Verdana, sans-serif;
+font-size: 13px;
+font-style: normal;
+color: #69788b;
+font-weight:bold;
+}
+.pager ul.pages li.pgNext 
+{
+    background-image:url(images/page-arrow-next.png);
+    background-repeat:no-repeat;
+    height:15px;
+    width:15px;
+    
+}
+.pager ul.pages li.pgPrev 
+{
+    background-image:url(images/page-arrow-prev.png);
+    background-repeat:no-repeat;
+    height:15px;
+    width:15px;
+    
+}

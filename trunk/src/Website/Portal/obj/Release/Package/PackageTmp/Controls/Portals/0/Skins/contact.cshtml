@@ -1,0 +1,23 @@
+﻿@model Portal.Models.PortalPageViewModel
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Keywords = Model.MetaKeywords;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Id = Model.Id.ToString();
+}
+
+<section class="outer">
+    <div class="row">
+        <div class="columns default-12 tablet-12 desktop-8" data-portal-content-pane="left-content">
+            @{Html.RenderPartial("~/Controls/Portals/0/Skins/_WidgetZone.cshtml", Model, new ViewDataDictionary() { { "Zone", "left-content" } });}
+        </div>
+        <div class="columns default-12 tablet-12 desktop-4">
+            <article>
+                <div class="ui-flex-container column top full-width" data-portal-content-pane="right-content">
+                    <h1>@Model.Name</h1>
+                    @{Html.RenderPartial("~/Controls/Portals/0/Skins/_WidgetZone.cshtml", Model, new ViewDataDictionary() { { "Zone", "right-content" } });}
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

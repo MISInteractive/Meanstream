@@ -1,0 +1,183 @@
+﻿
+.spacer20x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 20px;
+}
+.spacer20x10
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 10px;
+}
+.spacer10x10
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 10px; 
+    height: 10px;
+}
+.spacer15x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 15px; 
+    height: 20px;
+}
+.spacer1x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 1px; 
+    height: 20px;
+}
+.spacer20x1
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 20px; 
+    height: 1px;
+}
+.spacer40x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 40px; 
+    height: 20px;
+}
+.spacer35x20
+{
+	display: block;
+    background:url(images/10x10.gif);
+    background-repeat:no-repeat;
+    width: 35px; 
+    height: 20px;
+}
+.dash-top
+{
+	display: block;
+    background:url(images/dash-top-bg.jpg);
+}
+.dash-line
+{
+	background-color: #E6E6E6;
+}
+.icon-pages
+{
+	display: block;
+    background:url(images/icon-page-lg.png);
+    width: 64px; 
+    height: 64px; 
+}
+.icon-marketing
+{
+	display: block;
+    background:url(images/icon-mass-email-lg.png);
+    width: 64px;  
+    height: 64px; 
+}
+.icon-files
+{
+	display: block;
+    background:url(images/icon-files-lg.png);
+    width: 64px;  
+    height: 64px; 
+}
+.icon-admin
+{
+	display: block;
+    background:url(images/icon-administration-lg.png);
+    width: 64px;  
+    height: 64px; 
+}
+.icon-community
+{
+	display: block;
+    background:url(images/icon-blog-lg.png);
+    width: 64px;  
+    height: 64px; 
+}
+.icon-live
+{
+	display: block;
+    background:url(images/icon-live-site-lg.png);
+    width: 64px;  
+    height: 64px; 
+}
+.dash-help-left
+{
+	display: block;
+    background:url(images/dash-help-left.gif);
+    width: 5px; 
+    height: 184px;
+}
+.dash-help-mid
+{
+	display: block;
+    background:url(images/dash-help-mid.gif);
+
+}
+.dash-help-right
+{
+	display: block;
+    background:url(images/dash-help-right.gif);
+    width: 5px; 
+    height: 184px;
+}
+.dash-user-table
+{
+	display: block;
+    background:url(images/dash-user-table.png);
+}
+.user-stat-right-bar
+{
+	display: block;
+    background:url(images/user-stat-bar-right.png);
+
+    width: 14px;
+    height: 40px;
+}
+.user-stat-left-bar
+{
+	display: block;
+    background:url(images/user-stat-bar-left.png);
+    background-repeat: repeat;
+    width: 40px;
+    height: 40px;
+}
+.brightbarheader {
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: bold;
+  TEXT-DECORATION: none;
+  display: block;
+  background:url(images/user-stat-mid-bar.gif);
+  background-repeat: repeat;
+  width: 400px; 
+  line-height: 40px;
+  padding: 0 0 0 10px;
+}
+.icon-next
+{
+	display: block;
+    background:url(images/icon-next.png);
+    width: 16px; 
+    height: 16px;
+}
+.announce
+{
+	display: block;
+    background:url(images/announce-bg.png);
+}

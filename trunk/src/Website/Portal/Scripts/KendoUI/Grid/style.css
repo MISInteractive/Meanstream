@@ -1,0 +1,400 @@
+﻿/* Grid CSS Skin */
+.MSGrid  /* Controls Grid Outer Grid Border */
+{
+    border-style:solid;
+    border-color:#E6E6E6;
+    border-width:1px;   
+        
+}
+
+.MSGridHeaderRow    /* Controls Grid header style */
+{
+background-image:url(images/table-top.png);
+background-repeat:repeat-x;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight:bold;
+text-align:left;
+TEXT-DECORATION: none;
+height:32px;
+}
+
+.MSHeaderGridCell /* Controls vertical line styling of Grid header */
+{
+border-right-width:1px;
+border-right-color:#E6E6E6;
+border-right-style:solid;
+height:32px;
+}
+
+.MSHeaderCellPadding /* Controls padding of header cell text */
+{
+    padding-left:15px;
+    
+    
+}
+
+.MSGridCellPadding /* Controls padding of grid cell text */
+{
+    padding-left:15px;
+    float:left;
+    overflow:hidden;
+    padding-right:2px;
+    
+    
+   
+   
+   
+}
+
+.MSGridTop   /* Controls Top of the Grid Display, Add New Record, Status Msg */
+{
+height:32px;
+vertical-align:bottom;
+border-left-width:1px;
+border-left-style:solid;
+border-left-color:#E6E6E6;
+border-right-width:1px;
+border-right-style:solid;
+border-right-color:#E6E6E6;
+border-top-width:1px;
+border-top-style:solid;
+border-top-color:#E6E6E6;
+padding-top:12px;
+}
+
+.MSHeaderSort  /* Controls Column Header text when sort is enabled for that column */
+{
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight: bold;
+TEXT-DECORATION: none;
+}
+
+.MSHeaderSort a  /* Controls Column Header link when sort is enabled for that column */
+{
+display:block;    
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight: bold;
+TEXT-DECORATION: none;
+}
+
+.MSGridSortImageASC /* sort ascending image */
+{
+float:right;
+background-image:url(images/sort-ascending-whitebg.gif);
+background-repeat:no-repeat;
+width:10px;
+height:7px;
+margin-right:15px;
+margin-top:2px;
+    
+}
+.MSGridSortImageDESC /* sort descending image */
+{
+float:right;
+background-image:url(images/sort-descending-whitebg.gif);
+background-repeat:no-repeat;
+width:10px;
+height:7px;
+margin-right:15px;
+margin-top:2px;
+}
+
+.MSGridInsertForm /* Controls Grid Insert Form */
+{
+background-image:url(images/table2.png);
+background-repeat:repeat;
+background-image:url(images/table-top.png);
+background-repeat:repeat-x; 
+border-bottom-width:1px;
+border-bottom-color:#E6E6E6;
+border-bottom-style:solid;
+}
+
+.MSEditForm /* Controls Grid Edit Form */
+{
+background-image:url(images/table2.png);
+background-repeat:repeat;    
+border-bottom-width:1px;
+border-bottom-color:#E6E6E6;
+border-bottom-style:solid;
+border-top-width:1px;
+border-top-color:#E6E6E6;
+border-top-style:solid;
+
+
+
+}
+
+
+
+
+.MSGridCell /* Controls Grid cell */
+{
+border-right-width:1px;
+border-right-color:#E6E6E6;
+border-right-style:solid;
+height:32px;
+
+
+}
+
+.MSGridCellText /* Controls Grid cell */
+{
+    
+}
+
+.MSEditCell  /* Controls Grid edit cell */
+{
+border-right-width:0px !Important;
+text-indent: 5px !Important;
+}
+
+.MSGridButtonControlsEditMode  /* Controls Grid Command/Buttons */
+{
+    
+    
+    filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+
+    
+}
+
+
+.MSGridButtonControls  /* Controls Grid Command/Buttons */
+{
+    
+padding-left:2px;
+padding-right:5px;
+}
+
+.MSGridSelect  /* Controls Grid Command/Buttons */
+{
+padding-left:0px !Important;
+padding-right:0px !Important;
+text-indent: 1px !Important;
+}
+
+.MSGridRow /* Controls Grid row appearance */
+{
+background-image:url(images/table1.png);    
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #E6E6E6;
+font-weight: normal;
+text-align:left;
+TEXT-DECORATION: none;
+height:32px;
+}
+
+.MSGridAlternatingRow /* Controls alernating Grid row appearance */
+{
+background-image:url(images/table2.png);    
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight: normal;
+text-align:left;
+TEXT-DECORATION: none;
+height:32px;
+}
+
+
+.MSGridStatus /* Controls Grid Status Messages */
+{
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color:#4a7eba;
+font-weight:bold;
+text-align:right;
+float:right
+}
+
+/* CSS Classes for Grid Pager */
+
+.MSGridFooter  /* Controls Grid header */
+{
+background-image:url(images/table-bottom.png);
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight:bold;
+TEXT-DECORATION: none;
+height:32px;
+vertical-align:middle;
+padding-top:2px;
+}
+
+.MSGridPager 
+{
+float:left;
+margin-left:20px;
+}
+
+.MSPagerData
+{
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal !Important;
+color: #656565;
+text-align:right;
+font-weight:normal !Important;
+margin-top:2px;
+margin-right:10px;
+}
+
+.MSGridCurrentPage
+{
+background-image:url(images/page.gif);
+display:inline-block; width:19px; text-align:center;  position:relative; vertical-align:middle; padding-top:1px; margin-right:10px;
+border-color:#E6E6E6;
+border-style:solid;
+border-width:1px;
+height:32px;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #b4b4b4;
+font-weight: bold;
+text-decoration: none;
+margin-right:7px;
+}
+
+.MSGridPage
+{
+background-image:url(images/page.gif);
+display:inline-block; width:19px; text-align:center;  position:relative; vertical-align:middle; padding-top:1px;
+border-color:#E6E6E6;
+border-style:solid;
+border-width:1px;
+height:32px;
+margin-right:10px;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight: bold;
+text-decoration: none;
+margin-right:7px;
+}
+
+
+.MSGridCurrentPage_Hierarchical
+{
+float:left;
+background:url(images/page.gif);
+
+width:19px; text-align:center;  position:relative; vertical-align:middle; padding-top:1px; margin-right:10px;
+border-color:#E6E6E6;
+border-style:solid;
+border-width:1px;
+height:32px;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #b4b4b4;
+font-weight: bold;
+text-decoration: none;
+text-indent:-2px;     
+}
+
+
+.MSGridPage_Hierarchical
+{
+float:left;
+background-image:url(images/page.gif);
+width:19px; text-align:center;  position:relative; vertical-align:middle; padding-top:1px;
+border-color:#E6E6E6;
+border-style:solid;
+border-width:1px;
+height:32px;
+margin-right:10px;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight: bold;
+text-decoration: none;
+text-indent:-2px; 
+}
+
+
+.MSGridPrevious
+{
+background-image:url(images/page-pre.png);  
+display:inline-block; width:16px; height:29px;
+margin-right:7px;
+}
+
+.MSGridNext
+{
+background-image:url(images/page-next.png);  
+display:inline-block; width:16px; height:29px;
+margin-left:3px;
+}
+
+/* End CSS Classes for Grid Pager */
+
+
+/* CSS Classes for Asp.net Controls that appear in the Grid */
+.MSGridButton
+{
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #656565;
+font-weight:bold;
+}
+
+
+
+.MSGridTextBox
+{
+background-color:#4b4b4b;
+font-family: Tohoma, Arial, Verdana, sans-serif;
+font-size: 12px;
+font-style: normal;
+color: #FFFFFF;
+font-weight:normal;
+border-color:#FFFFFF;
+border-style:solid;
+border-width:1px;
+width:200px;
+height:20px;
+}
+
+.MSGridText
+{
+font:12px "segoe ui",Tohoma,arial,sans-serif;
+color:#262626;
+}
+
+.MSGridCommand
+{
+font:12px "segoe ui",Tohoma,arial,sans-serif;
+color:#656565; 
+background-color:#932521;
+width:70px;
+height:20px;
+border-width:0px;
+}
+
+.cssDelete
+{
+    display:none;
+}
+

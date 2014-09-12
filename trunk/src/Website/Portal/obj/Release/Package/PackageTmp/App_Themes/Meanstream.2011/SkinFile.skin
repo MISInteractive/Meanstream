@@ -1,0 +1,7 @@
+﻿<%@ Register TagPrefix="Meanstream" Namespace="Meanstream.Web.UI" Assembly="Meanstream.Web.UI" %>
+<%@ Register TagPrefix="MeanstreamUI" Namespace="Meanstream.Portal.WebControls" Assembly="Meanstream.Portal" %>
+<Meanstream:Window SkinID="Window" runat="server" CssClass="Black" />
+<Meanstream:ComboBox SkinID="Combobox" runat="server" Theme="Simple" />
+<Meanstream:TabContainer SkinID="Tabs" CssClass="Meanstream2011" runat="server" />
+<MeanstreamUI:Menu SkinID="Menu" runat="server" Theme="Black" />
+<asp:TextBox runat="server" SkinID="Text" CssClass="textbox"></asp:TextBox>

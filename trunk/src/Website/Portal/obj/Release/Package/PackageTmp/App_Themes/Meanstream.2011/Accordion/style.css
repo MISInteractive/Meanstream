@@ -1,0 +1,38 @@
+﻿/* root element for accordion. decorated with rounded borders and gradient background image */
+.Black .meanstream_accordion {
+	background:#f6f6f6 url(images/h300.png) 0 0;
+	width: 300px;
+	border:1px solid #f6f6f6;	
+	-background:#666;
+}
+
+/* accordion header */
+.Black .meanstream_accordion_header {
+	background:#efefef url(images/h30.png);
+	margin:0;
+	padding:5px 15px;
+	font-size:14px;
+	font-weight:normal;
+	border:1px solid #E6E6E6;
+	border-bottom:1px solid #656565;
+	cursor:pointer;		
+}
+
+/* accordion pane */
+.Black .meanstream_accordion_pane {
+	border:1px solid #e6e6e6;
+	border-width:0 2px;
+	display:none;
+	height:180px;
+	padding:15px;
+	color:#656565;
+	font-size:12px;
+}
+
+/* a title inside pane */
+.Black .meanstream_accordion_pane_title {
+	font-weight:normal;
+	margin:0 0 -5px 0;
+	font-size:16px;
+	color:#999;
+}

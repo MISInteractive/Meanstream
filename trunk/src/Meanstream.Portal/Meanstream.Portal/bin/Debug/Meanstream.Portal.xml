@@ -1,0 +1,2062 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Meanstream.Portal
+</name>
+</assembly>
+<members>
+<member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetBase.GetIModuleDTO">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetBase.GetIModuleDTO"/> to retrieve a custom widget module.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetBase.OnWidgetDelete">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetBase.OnWidgetDelete"/> called by the system during widget and page deletion.
+ </summary>
+</member><member name="P:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.Content">
+	<summary>
+ Implements ISearchable.Content. Retrieves the custom widget content from the data store by ContentId 
+ </summary>
+	<returns>The <see cref="N:Meanstream.Portal.Core.Content"/> widget content</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.#ctor(System.Guid)">
+	<summary>
+ Initializes the custom widget module and loads from the data store by unique ID  
+ </summary>
+	<param name="Id">The <see cref="T:System.Guid"/> the unique ID.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.Create(System.String,System.String,System.String,System.Guid,System.Guid,System.Guid,System.Boolean)">
+	<summary>
+ Creates a new freetext widget module and saves the content to the data store   
+ </summary>
+	<param name="Title">The <see cref="T:System.String"/> Title of the content</param>
+	<param name="Author">The <see cref="T:System.String"/> Author of the content</param>
+	<param name="Text">The <see cref="T:System.String"/> body of the content</param>
+	<param name="CheckedOutBy">The <see cref="T:System.Guid"/> checks out the content be userId</param>
+	<param name="ModuleId">The <see cref="T:System.Integer"/> published widgetId content</param>
+	<param name="ModuleVersionId">The <see cref="T:System.Integer"/> version widgetId content</param>
+	<param name="IsLocked">The <see cref="T:System.Boolean"/> locks the content</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.GetById(System.Guid)">
+	<summary>
+ Retrieves the custom widget module from the data store by unique ID 
+ </summary>
+	<param name="Id">The <see cref="T:System.Guid"/> the unique ID.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.GetByModuleId(System.Guid)">
+	<summary>
+ Retrieves the published custom widget module from the data store by ModuleId (WidgetId)
+ </summary>
+	<param name="ModuleId">The <see cref="T:System.Guid"/> the new WidgetId.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.GetByModuleVersionId(System.Guid)">
+	<summary>
+ Retrieves the custom version of a widget module from the data store by ModuleVersionId (WidgetId)
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Guid"/> the version WidgetId.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.Save">
+	<summary>
+ Implements <see cref="E:Meanstream.Portal.Core.WidgetFramework.IModuleDTO.Save"/> Saves the widget's custom content to the data store.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetModule.Delete">
+	<summary>
+ Implements <see cref="E:Meanstream.Portal.Core.WidgetFramework.IModuleDTO.Delete"/> interface. Deletes the widget's custom content from the data store during widget deletion.
+ </summary>
+</member><member name="M:Meanstream.Portal.ComponentModel.SimpleContainer.#ctor">
+	<summary>
+   Initializes a new instance of the SimpleContainer class.
+ </summary>
+</member><member name="M:Meanstream.Portal.ComponentModel.SimpleContainer.#ctor(System.String)">
+	<summary>
+   Initializes a new instance of the SimpleContainer class.
+ </summary>
+	<param name="name"></param>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.#ctor">
+	<summary> Class cannot be instantiated</summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.Left(System.String,System.Int32)">
+	<summary>
+ Gets the leftmost n characters of a String. If n characters are not
+ available, or the String is <code>null</code>, the String will be
+ returned without an exception.
+ </summary>
+	<param name="str">The String to get the leftmost characters from</param>
+	<param name="len">The length of the required String</param>
+	<returns>The leftmost characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.LeftIndexOf(System.String,System.String)">
+	<summary>
+ Gets the left most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the left most characters off</param>
+	<param name="search">The string to search for</param>
+	<returns>The left most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.LeftIndexOf(System.String,System.String,System.Boolean)">
+	<summary>
+ Gets the left most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the left most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="includeSearchString">If true will include the search string in the result, if false then the search string is excluded</param>
+	<returns>The left most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.LeftIndexOf(System.String,System.String,System.Int32)">
+	<summary>
+ Gets the left most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the left most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="fromIndex">The index to start the search from</param>
+	<returns>The left most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.LeftIndexOf(System.String,System.String,System.Int32,System.Boolean)">
+	<summary>
+ Gets the left most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the left most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="fromIndex">The index to start the search from</param>
+	<param name="includeSearchString">If true will include the search string in the result, if false then the search string is excluded</param>
+	<returns>The left most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.LeftOf(System.String,System.Int32)">
+	<summary>
+ Gets the characters to the left of <var>pos</var>.
+ </summary>
+	<param name="str">The String to get the left most characters from</param>
+	<param name="pos">The position to cut from</param>
+	<returns>The left most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.Right(System.String,System.Int32)">
+	<summary>
+ Gets the right most n characters of a String. If n characters are not
+ available, or the String is <code>null</code>, the String will be
+ returned without an exception.
+ </summary>
+	<param name="str">The String to get the right most characters from</param>
+	<param name="len">The length of the required String</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightIndexOf(System.String,System.String)">
+	<summary>
+ Gets the right most characters starting from the index of <var>search</var>.
+ <br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the right most characters off</param>
+	<param name="search">The string to search for</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightIndexOf(System.String,System.String,System.Boolean)">
+	<summary>
+ Gets the right most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the right most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="includeSearchString">If true will include the search string in the result, if false then the search string is excluded</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightIndexOf(System.String,System.String,System.Int32)">
+	<summary>
+ Gets the right most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the right most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="fromIndex">The index to start the search from</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightIndexOf(System.String,System.String,System.Int32,System.Boolean)">
+	<summary>
+ Gets the right most characters starting from the index of <var>search</var>
+		<br/>
+ If <var>str</var> is <code>null</code>, then <var>str</var> will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the right most characters off</param>
+	<param name="search">The string to search for</param>
+	<param name="fromIndex">The index to start the search from</param>
+	<param name="includeSearchString">If true will include the search string in the result, if false then the search string is excluded</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightLastIndexOf(System.String,System.String)">
+	<summary>
+ Gets the right most characters starting from the last index of <var>search</var>.
+ <br/>
+ If the String is <code>null</code>, the String will be returned without an exception.
+ <br/><br/>
+ If <var>search</var> is not found then <var>str</var> will be returned without an exception.
+ </summary>
+	<param name="str">The string to get the right most characters off</param>
+	<param name="search">The last occurence of search to start from</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.RightOf(System.String,System.Int32)">
+	<summary>
+ Gets the characters to the right of <var>pos</var>.
+ </summary>
+	<param name="str">The String to get the right most characters from</param>
+	<param name="pos">The position to cut from</param>
+	<returns>The right most characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.Substring(System.String,System.Int32)">
+	<summary>
+ Gets a substring from the specified string avoiding exceptions from invalid start indexes or null strings.
+ </summary>
+	<param name="str">The String to get the substring from</param>
+	<param name="start">The index of the start of the substring</param>
+	<returns>substring from start position</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.Substring(System.String,System.Int32,System.Int32)">
+	<summary>
+ Gets a substring from the specified string avoiding exceptions from invalid start indexes, lengths or null strings.
+ </summary>
+	<param name="str">The String to get the substring from</param>
+	<param name="start">The index of the start of the substring</param>
+	<param name="length">The number of characters in the substring. </param>
+	<returns>substring from start position for <var>length</var> characters</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.StringUtility.StartsWith(System.String,System.String)">
+	<summary>
+ Similer to String.StartsWith except that it is case-insensitive.
+ </summary>
+	<param name="str">The string to test</param>
+	<param name="StartsWith__1">The string to seek</param>
+	<returns><b>true</b> if value matches the beginning of this string or is Empty; otherwise <b>false</b></returns>
+</member><member name="T:Meanstream.Portal.Core.Utilities.StringUtility">
+	<summary>
+ Summary description for StrUtil.
+ </summary>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHelper.GetConnection(System.String,System.Boolean)">
+	<devdoc>
+	</devdoc>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHelper.GetConnectionString(System.String,System.Boolean,System.Boolean)">
+	<devdoc>
+	</devdoc>
+</member><member name="T:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHelper">
+	<devdoc>
+	</devdoc>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHolder.#ctor(System.String)">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHolder.Open(System.Web.HttpContext,System.Boolean)">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHolder.Close">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="T:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlConnectionHolder">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Meanstream.Core.Repository.IProviderSettings">
+	<summary>
+ Interface for Repository Provider Settings used to bind default settings from the web.config.
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.ProviderSettings.Item(System.String)">
+	<summary>
+ Get/set additional values.
+ </summary>
+	<param name="key">Key to settings item.</param>
+	<returns>Value of settings item.</returns>
+</member><member name="P:Meanstream.Core.Repository.ProviderSettings.Settings">
+	<summary>
+ Provide read-only access to settings.
+ </summary>
+</member><member name="T:Meanstream.Core.Repository.ProviderSettings">
+	<summary>
+ Base class for Repository Provider Settings.
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.Repository.DefaultProvider">
+	<summary>
+ Get the default provider.
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.Repository.Provider">
+	<summary>
+ Get the current provider.
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.Repository.Providers">
+	<summary>
+ Get all providers.
+ </summary>
+</member><member name="T:Meanstream.Core.Repository.Repository">
+	<summary>
+ Used to log unhandled exceptions 
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.RepositoryProvider.Name">
+	<summary>
+ Get the provider name 
+ </summary>
+</member><member name="T:Meanstream.Portal.Core.Extensibility.AttributeEntityManager">
+	<summary>
+ Decorator class that references the IAttributeEntity that processes and tracks attributes.
+ This class provides the way to decouple the AttributeEntity from its implementation.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetPassword(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.ResetPassword(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.ValidateUser(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetUser(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetUserNameByEmail(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.DeleteUser(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetNumberOfUsersOnline">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.CheckPassword(System.String,System.String,System.Boolean,System.Boolean)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetPasswordWithFormat(System.String,System.Boolean,System.Int32@,System.String@,System.Int32@,System.String@,System.Int32@,System.Int32@,System.Boolean@,System.DateTime@,System.DateTime@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetPasswordFromDB(System.String,System.String,System.Boolean,System.Int32@,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetEncodedPasswordAnswer(System.String,System.String)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GeneratePassword">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetNullableString(System.Data.SqlClient.SqlDataReader,System.Int32)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlMembershipProvider.GetExceptionText(System.Int32)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Core.Utilities.RegExUtility.#ctor">
+	<summary> Class cannot be instantiated</summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.RegExUtility.GetRegEx(Meanstream.Portal.Core.Utilities.RegularExpression)">
+	<summary> 
+ Get a predefined regular expression
+ </summary>
+	<param name="regularExpressionId">Id of the regular expression to return
+ </param>
+	<returns>RegEx</returns>
+</member><member name="M:Meanstream.Portal.Core.Utilities.RegExUtility.GetMatchRegEx(Meanstream.Portal.Core.Utilities.RegularExpression,System.String)">
+	<summary> 
+ Get a match object based on a predefined regular expression
+ </summary>
+	<param name="regularExpressionId">Id of the regular expression to return</param>
+	<param name="text">Text to match on</param>
+	<returns>Match</returns>
+</member><member name="T:Meanstream.Portal.Core.Utilities.RegExUtility">
+	<summary>
+ Summary description for RegExUtility.
+ </summary>
+</member><member name="M:Meanstream.Core.Data.DataService.DefaultProvider">
+	<summary>
+ Get the default provider.
+ </summary>
+</member><member name="M:Meanstream.Core.Data.DataService.Get(System.String)">
+	<summary>
+ Get the named provider using the string indexer.
+ </summary>
+	<param name="key">Name of provider.</param>
+	<returns>Provider with supplied key.</returns>
+</member><member name="M:Meanstream.Core.Data.DataService.Get(System.Int32)">
+	<summary>
+ Get the named provider using the string indexer.
+ </summary>
+	<param name="index">Index of provider.</param>
+	<returns>Provider with supplied index.</returns>
+</member><member name="P:Meanstream.Core.Data.DataService.Providers">
+	<summary>
+ Get the all providers.
+ </summary>
+</member><member name="F:Meanstream.Core.Data.DataService._provider">
+	<summary>
+ Get the current provider.
+ </summary>
+</member><member name="P:Meanstream.Core.Data.DataService.Count">
+	<summary>
+ Get the number of the providers.
+ </summary>
+</member><member name="T:Meanstream.Core.Data.IProviderSettings">
+	<summary>
+ Interface for Data Provider Settings used to bind default settings from the web.config.
+ </summary>
+</member><member name="P:Meanstream.Core.Data.ProviderSettings.Item(System.String)">
+	<summary>
+ Get/set additional values.
+ </summary>
+	<param name="key">Key to settings item.</param>
+	<returns>Value of settings item.</returns>
+</member><member name="P:Meanstream.Core.Data.ProviderSettings.Settings">
+	<summary>
+ Provide read-only access to settings.
+ </summary>
+</member><member name="T:Meanstream.Core.Data.ProviderSettings">
+	<summary>
+ Base class for Data Provider Settings.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.IsUtility.#ctor">
+	<summary> Class cannot be instantiated</summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.IsUtility.EmptyString(System.String)">
+	<summary> Empty String tests a String to see if it is null or empty.
+ </summary>
+	<param name="value">String to be tested.
+ </param>
+	<returns> boolean true if empty.
+ </returns>
+</member><member name="T:Meanstream.Portal.Core.Utilities.IsUtility">
+	<summary>
+ Summary description for IsUtility.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.WeakReference`1.#ctor(`0)">
+	<summary> 
+ Initializes a new instance of the Minimal.WeakReference{T} class, referencing 
+ the specified object. 
+ </summary>
+	<param name="target">The object to reference.</param>
+</member><member name="M:Meanstream.Portal.Core.Utilities.WeakReference`1.#ctor(`0,System.Boolean)">
+	<summary> 
+ Initializes a new instance of the WeakReference{T} class, referencing 
+ the specified object and using the specified resurrection tracking. 
+ </summary>
+	<param name="target">An object to track.</param>
+	<param name="trackResurrection">Indicates when to stop tracking the object. If true, the object is tracked 
+ after finalization; if false, the object is only tracked until finalization.</param>
+</member><member name="P:Meanstream.Portal.Core.Utilities.WeakReference`1.Target">
+	<summary> 
+ Gets or sets the object (the target) referenced by the current WeakReference{T} 
+ object. 
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.WeakReference`1.op_Implicit(`0)~Meanstream.Portal.Core.Utilities.WeakReference{`0}">
+	<summary> 
+ Casts an object of the type T to a weak reference 
+ of T. 
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Utilities.WeakReference`1.op_Implicit(Meanstream.Portal.Core.Utilities.WeakReference{`0})~`0">
+	<summary> 
+ Casts a weak reference to an object of the type the 
+ reference represents. 
+ </summary>
+</member><member name="T:Meanstream.Portal.Core.Utilities.WeakReference`1">
+	<summary> 
+ Represents a weak reference, which references an object while still allowing 
+ that object to be reclaimed by garbage collection. 
+ </summary>
+	<typeparam name="T">The type of the object that is referenced.</typeparam>
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.IsUserInRole(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.GetRolesForUser(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.CreateRole(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.DeleteRole(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.RoleExists(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.GetUsersInRole(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.GetAllRoles">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.FindUsersInRole(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="P:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.ApplicationName">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlRoleProvider.GetReturnValue(System.Data.SqlClient.SqlCommand)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="T:Meanstream.Portal.Providers.PortalSiteMapProvider.IndexedSiteMapProvider">
+	<summary>
+ IndexedSiteMapProvider
+ This class is a site map provider implementation for a site crawler.
+ This provider provides caching feature so that it will return root SiteMapNode if available in cache.
+ </summary>
+</member><member name="M:Meanstream.Portal.ComponentModel.SingletonComponentBuilder.#ctor(System.String,System.Type)">
+	<summary>
+ Initializes a new instance of the SingletonComponentBuilder class.
+ </summary>
+	<param name="name">The name of the component</param>
+	<param name="type">The type of the component</param>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.Append">
+	<summary>
+ Append
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendEquals">
+	<summary>
+ AppendEquals
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotEquals">
+	<summary>
+ AppendNotEquals
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendIn">
+	<summary>
+ AppendIn
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotIn">
+	<summary>
+ AppendNotIn
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendInQuery">
+	<summary>
+ AppendInQuery
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotInQuery">
+	<summary>
+ AppendNotInQuery
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendRange">
+	<summary>
+ AppendRange
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotRange">
+	<summary>
+ AppendNotRange
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendIsNull">
+	<summary>
+ AppendIsNull
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendIsNotNull">
+	<summary>
+ AppendIsNotNull
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendGreaterThan">
+	<summary>
+ AppendGreaterThan
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendGreaterThanOrEqual">
+	<summary>
+ AppendGreaterThanOrEqual
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendLessThan">
+	<summary>
+ AppendLessThan
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendLessThanOrEqual">
+	<summary>
+ AppendLessThanOrEqual
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendStartsWith">
+	<summary>
+ AppendStartsWith
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendEndsWith">
+	<summary>
+ AppendEndsWith
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendContains">
+	<summary>
+ AppendContains
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotContains">
+	<summary>
+ AppendNotContains
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendLike">
+	<summary>
+ AppendLike
+ </summary>
+</member><member name="F:Meanstream.Core.Query.StringBuilderExpression.AppendNotLike">
+	<summary>
+ AppendLike
+ </summary>
+</member><member name="T:Meanstream.Core.Query.StringBuilderExpression">
+	<summary>
+ Represents a SQL filter builder expression enumeration.
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.#ctor">
+	<summary>
+ Initializes a new instance of the SqlQueryBuilder class.
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.#ctor(System.Boolean)">
+	<summary>
+ Initializes a new instance of the SqlQueryBuilder class.
+ </summary>
+	<param name="ignoreCase">Specifies whether to create case-insensitive statements.</param>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.#ctor(System.Boolean,System.Boolean)">
+	<summary>
+ Initializes a new instance of the SqlQueryBuilder class.
+ </summary>
+	<param name="ignoreCase">Specifies whether to create case-insensitive statements.</param>
+	<param name="useAnd">Specifies whether to combine statements using AND or OR.</param>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendEquals(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendEquals(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotEquals(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ as a NOT EQUALS expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotEquals(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter
+ as a NOT EQUALS expression.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIn(System.String,System.String[])">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="values"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIn(System.String,System.String[],System.Boolean)">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="values"></param>
+	<param name="encode"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIn(System.String,System.String,System.String[])">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="values"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIn(System.String,System.String,System.String[],System.Boolean)">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="values"></param>
+	<param name="encode"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotIn(System.String,System.String[])">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ as a NOT IN expression.
+ </summary>
+	<param name="column"></param>
+	<param name="values"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotIn(System.String,System.String[],System.Boolean)">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ as a NOT IN expression.
+ </summary>
+	<param name="column"></param>
+	<param name="values"></param>
+	<param name="encode"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotIn(System.String,System.String,System.String[])">
+	<summary>
+ Appends the specified column and list of values to the current filter.
+ as a NOT IN expression.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="values"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotIn(System.String,System.String,System.String[],System.Boolean)">
+	<summary>
+ Appends the specified column and list of values to the current filter
+ as a NOT IN expression.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="values"></param>
+	<param name="encode"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendInQuery(System.String,System.String)">
+	<summary>
+ Appends the specified sub-query to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="query"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendInQuery(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified sub-query to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="query"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotInQuery(System.String,System.String)">
+	<summary>
+ Appends the specified sub-query to the current filter
+ as a NOT IN expression.
+ </summary>
+	<param name="column"></param>
+	<param name="query"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotInQuery(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified sub-query to the current filter
+ as a NOT IN expression.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="query"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendRange(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value range to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="from"></param>
+	<param name="to"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendRange(System.String,System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value range to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="from"></param>
+	<param name="to"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotRange(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value not in range to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="from"></param>
+	<param name="to"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotRange(System.String,System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value not in range to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="from"></param>
+	<param name="to"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIsNull(System.String)">
+	<summary>
+ Appends an IS NULL expression to the current filter.
+ </summary>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIsNull(System.String,System.String)">
+	<summary>
+ Appends an IS NULL expression to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIsNotNull(System.String)">
+	<summary>
+ Appends an IS NOT NULL expression to the current filter.
+ </summary>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendIsNotNull(System.String,System.String)">
+	<summary>
+ Appends an IS NOT NULL expression to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendGreaterThan(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendGreaterThan(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendGreaterThanOrEqual(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendGreaterThanOrEqual(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLessThan(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLessThan(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLessThanOrEqual(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLessThanOrEqual(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendStartsWith(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendStartsWith(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendEndsWith(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendEndsWith(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendContains(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendContains(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotContains(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotContains(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLike(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendLike(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotLike(System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendNotLike(System.String,System.String,System.String)">
+	<summary>
+ Appends the specified column and value to the current filter.
+ </summary>
+	<param name="junction"></param>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendInternal(System.String,System.String,System.String,System.String)">
+	<summary>
+ Appends the SQL expression to the internal <see cref="T:System.Text.StringBuilder"/>.
+ </summary>
+	<param name="junction">The junction.</param>
+	<param name="column">The column.</param>
+	<param name="compare">The compare.</param>
+	<param name="value">The value.</param>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.AppendInternal(System.String,System.String)">
+	<summary>
+ Appends the SQL expression to the internal <see cref="T:System.Text.StringBuilder"/>.
+ </summary>
+	<param name="junction">The junction.</param>
+	<param name="query">The query.</param>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.Clear">
+	<summary>
+ Clears the internal string buffer.
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.ToString">
+	<summary>
+ Converts the value of this instance to a System.String.
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.ToString(System.String)">
+	<summary>
+ Converts the value of this instance to a System.String and
+ prepends the specified junction if the expression is not empty.
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.GetInQueryValues(System.String,System.Boolean)">
+	<summary>
+ Gets an encoded list of values for use with an IN clause.
+ </summary>
+	<param name="values">Comma string with the in parameters already in one string</param>
+	<param name="encode">tells whether or not to enclose the parameters with ' and to replace ' with '' within the parameters.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.GetInQueryValues(System.String[],System.Boolean)">
+	<summary>
+ Gets an encoded list of values for use with an IN clause.
+ </summary>
+	<param name="values">String Array with the in parameters</param>
+	<param name="encode">tells whether or not to enclose the parameters with ' and to replace ' with '' within the parameters.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.BeginGroup">
+	<summary>
+ Begins a new group of parameters by adding an open parenthesis "("
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.BeginGroup(System.String)">
+	<summary>
+ Begins a new groups of parameters using the specified junction operator
+ </summary>
+	<param name="junction">The junction operator to be used</param>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.EndGroup">
+	<summary>
+ Ends a group of parameters by add a closing parenthesis ")"
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlQueryBuilder.EnsureGroups">
+	<summary>
+ Makes sure that all groups have been ended (each call to BeginGroup has a corresponding EndGroup)
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlQueryBuilder.m_junction">
+	<summary>
+ The Junction member variable.
+ </summary>
+</member><member name="P:Meanstream.Core.Query.SqlQueryBuilder.Junction">
+	<summary>
+ Gets or sets the Junction property.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlQueryBuilder.m_ignoreCase">
+	<summary>
+ The IgnoreCase member variable.
+ </summary>
+</member><member name="P:Meanstream.Core.Query.SqlQueryBuilder.IgnoreCase">
+	<summary>
+ Gets or sets the IgnoreCase property.
+ </summary>
+</member><member name="P:Meanstream.Core.Query.SqlQueryBuilder.Length">
+	<summary>
+ Gets or sets the length of the internal StringBuilder object.
+ </summary>
+	<value>The length.</value>
+</member><member name="T:Meanstream.Core.Query.SqlQueryBuilder">
+	<summary>
+ Represents a SQL filter expression.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetBase.GetIModuleDTO">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetBase.GetIModuleDTO"/> to retrieve a custom widget module.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetBase.OnWidgetDelete">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetControl.OnWidgetDelete"/> called by the system during widget and page deletion.
+ </summary>
+</member><member name="P:Meanstream.Portal.Core.Messaging.MessagingService.Enabled">
+	<summary>
+ Gets enabled/disabled status of messaging.
+ It is a read only property, the application messaging can be set up in the web.config file.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.GetIModuleDTO">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.GetIModuleDTO"/> to retrieve a custom widget module.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnAddToPageCreate(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnAddToPageCreate"/> called by the system during page creation.
+ </summary>
+	<param name="ModuleId">The <see cref="T:System.Integer"/> Widget's ModuleId (same as WidgetId).</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnAddToPage">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnAddToPage"/> called by the system when a widget is added to a page version.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnCopyAndAddFromVersion(System.Guid,System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnCopyAndAddFromVersion"/> called by the system when a page is copied to create a new page.
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Guid"/> the new version WidgetId.</param>
+	<param name="ModuleId">The <see cref="T:System.Guid"/> the new WidgetId.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnCreateVersionFromVersion(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnCreateVersionFromVersion"/> called by the system when a page is copied to create a new page during page publish.
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Integer"/> the new version WidgetId.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnPublish(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnPublish"/> called by the system when a page is published.
+ </summary>
+	<param name="PublishedModuleId">The <see cref="T:System.Guid"/> the widget's new published moduleId (same as the new WidgetId).</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetEditBase.OnWidgetDelete">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnWidgetDelete"/> called by the system during widget and page deletion.
+ </summary>
+</member><member name="P:Meanstream.Core.Data.DataProvider.Name">
+	<summary>
+ Get the provider name 
+ </summary>
+</member><member name="M:Meanstream.Core.Repository.RepositoryService.DefaultProvider">
+	<summary>
+ Get the default provider.
+ </summary>
+</member><member name="M:Meanstream.Core.Repository.RepositoryService.Get(System.String)">
+	<summary>
+ Get the named provider using the string indexer.
+ </summary>
+	<param name="key">Name of provider.</param>
+	<returns>Provider with supplied key.</returns>
+</member><member name="M:Meanstream.Core.Repository.RepositoryService.Get(System.Int32)">
+	<summary>
+ Get the named provider using the string indexer.
+ </summary>
+	<param name="index">Index of provider.</param>
+	<returns>Provider with supplied index.</returns>
+</member><member name="P:Meanstream.Core.Repository.RepositoryService.Providers">
+	<summary>
+ Get the all providers.
+ </summary>
+</member><member name="F:Meanstream.Core.Repository.RepositoryService._provider">
+	<summary>
+ Get the current provider.
+ </summary>
+</member><member name="P:Meanstream.Core.Repository.RepositoryService.Count">
+	<summary>
+ Get the number of the providers.
+ </summary>
+</member><member name="T:Meanstream.Portal.Core.Instrumentation.PortalTraceListener">
+	<summary>
+ Summary description for PortalTraceListener.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Content.PageVersionManager.CreateNewPageVersionBaseFromVersionID(System.Guid)">
+	<summary>
+ Creates a new PageVersionBase from an existing version.
+ </summary>
+	<param name="ID">The VersionId of he page to be copied</param>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.AND">
+	<summary>
+ SQL AND keyword.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.OR">
+	<summary>
+ SQL OR keyword.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.ASC">
+	<summary>
+ SQL ASC keyword.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.DESC">
+	<summary>
+ SQL DESC keyword.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.NULL">
+	<summary>
+ SQL NULL keyword.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.TOKEN">
+	<summary>
+ Used to represent quoted search terms.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.QUOTE">
+	<summary>
+ Delimiter for quoted search terms.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.STAR">
+	<summary>
+ Used as wildcard character within search text.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.WILD">
+	<summary>
+ SQL wildcard character.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.LEFT">
+	<summary>
+ SQL grouping open character.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.RIGHT">
+	<summary>
+ SQL grouping close character.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.COMMA">
+	<summary>
+ Delimiter for optional search terms.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlUtil.PAGE_INDEX">
+	<summary>
+ PageIndex Temp Table
+ </summary>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Equals(System.String,System.String)">
+	<summary>
+ Creates an <see cref="F:Meanstream.Core.Query.SqlComparisonType.Equals"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Equals(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates an <see cref="F:Meanstream.Core.Query.SqlComparisonType.Equals"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Equals(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates an <see cref="F:Meanstream.Core.Query.SqlComparisonType.Equals"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Equals(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Equals"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Contains(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Contains(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Contains(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Contains(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotContains(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotContains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotContains(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotContains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotContains(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotContains"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotContains(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotContains"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.StartsWith(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.StartsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.StartsWith(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.StartsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.StartsWith(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.StartsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.StartsWith(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.StartsWith"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.EndsWith(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.EndsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.EndsWith(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.EndsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.EndsWith(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.EndsWith"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.EndsWith(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.EndsWith"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Like(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Like"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Like(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Like"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Like(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Like"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Like(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.Like"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotLike(System.String,System.String)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotLike"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotLike(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotLike"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotLike(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Creates a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotLike"/> expression.
+ </summary>
+	<param name="column"></param>
+	<param name="value"></param>
+	<param name="ignoreCase"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.NotLike(System.String)">
+	<summary>
+ Encodes the value for a <see cref="F:Meanstream.Core.Query.SqlComparisonType.NotLike"/> expression.
+ </summary>
+	<param name="value">The value.</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.IsNull(System.String)">
+	<summary>
+ Creates an IS NULL expression.
+ </summary>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.IsNotNull(System.String)">
+	<summary>
+ Creates an IS NOT NULL expression.
+ </summary>
+	<param name="column"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Encode(System.String)">
+	<summary>
+ Encodes the specified value for use in SQL expressions.
+ </summary>
+	<param name="value"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Encode(System.String,System.Boolean)">
+	<summary>
+ Encodes the specified value for use in SQL expressions and
+ optionally surrounds the value with single-quotes.
+ </summary>
+	<param name="value"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Encode(System.String[])">
+	<summary>
+ Encodes the specified values for use in SQL expressions.
+ </summary>
+	<param name="values"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.Encode(System.String[],System.Boolean)">
+	<summary>
+ Encodes the specified values for use in SQL expressions and
+ optionally surrounds the value with single-quotes.
+ </summary>
+	<param name="values"></param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetLikeFormat(System.Boolean)">
+	<summary>
+ Gets the like format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetLikeFormat(System.Boolean,System.Boolean)">
+	<summary>
+ Gets the like format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetNotLikeFormat(System.Boolean)">
+	<summary>
+ Gets the not like format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetNotLikeFormat(System.Boolean,System.Boolean)">
+	<summary>
+ Gets the not like format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetEqualFormat(System.Boolean)">
+	<summary>
+ Gets the equal format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<returns></returns>
+</member><member name="M:Meanstream.Core.Query.SqlUtil.GetEqualFormat(System.Boolean,System.Boolean)">
+	<summary>
+ Gets the equal format string.
+ </summary>
+	<param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
+	<param name="surround"></param>
+	<returns></returns>
+</member><member name="T:Meanstream.Core.Query.SqlUtil">
+	<summary>
+ Provides utility methods for generating SQL expressions.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.Equals">
+	<summary>
+ Represents = value.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.StartsWith">
+	<summary>
+ Represents LIKE value%.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.EndsWith">
+	<summary>
+ Represents LIKE %value.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.Contains">
+	<summary>
+ Represents LIKE %value%.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.NotContains">
+	<summary>
+ Represents NOT LIKE %value%.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.Like">
+	<summary>
+ Represents LIKE value.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlComparisonType.NotLike">
+	<summary>
+ Represents NOT LIKE value.
+ </summary>
+</member><member name="T:Meanstream.Core.Query.SqlComparisonType">
+	<summary>
+ Enumeration of SQL expression comparison types.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlFilterType.Word">
+	<summary>
+ Represents an Individual Word filter
+ </summary>
+	<example>(if using <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/>) CompanyName LIKE "%Acme" AND CompanyName LIKE "Company%"</example>
+</member><member name="F:Meanstream.Core.Query.SqlFilterType.Phrase">
+	<summary>
+ Represents a Phrase filter
+ </summary>
+	<example>(if using <see cref="F:Meanstream.Core.Query.SqlComparisonType.Contains"/>) CompanyName LIKE "%Acme Company%"</example>
+</member><member name="T:Meanstream.Core.Query.SqlFilterType">
+	<summary>
+ Enumeration of SQL Filter Types.
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlSortDirection.ASC">
+	<summary>
+ Database Ascending
+ </summary>
+</member><member name="F:Meanstream.Core.Query.SqlSortDirection.DESC">
+	<summary>
+ Database Descending
+ </summary>
+</member><member name="T:Meanstream.Core.Query.SqlSortDirection">
+	<summary>
+ Enumeration of SQL expression Sort Directions
+ </summary>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.IsUserInRole(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.GetRolesForUser(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.CreateRole(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.DeleteRole(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.RoleExists(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.GetUsersInRole(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.GetAllRoles">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.FindUsersInRole(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="P:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.ApplicationName">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlRoleProvider.GetReturnValue(System.Data.SqlClient.SqlCommand)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHelper.GetConnection(System.String,System.Boolean)">
+	<devdoc>
+	</devdoc>
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHelper.GetConnectionString(System.String,System.Boolean,System.Boolean)">
+	<devdoc>
+	</devdoc>
+</member><member name="T:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHelper">
+	<devdoc>
+	</devdoc>
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHolder.#ctor(System.String)">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHolder.Open(System.Web.HttpContext,System.Boolean)">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHolder.Close">
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+</member><member name="T:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlConnectionHolder">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="F:Meanstream.Core.Providers.SqlServerDataProvider.Serializer`1._serializer">
+	<summary>
+ Serializer
+ </summary>
+</member><member name="M:Meanstream.Core.Providers.SqlServerDataProvider.Serializer`1.Serialize(`0)">
+	<summary>
+ Serialize object into string
+ </summary>
+	<param name="obj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Meanstream.Core.Providers.SqlServerDataProvider.Serializer`1.Deserialize(System.String)">
+	<summary>
+ Deserialize string into an instance of T
+ </summary>
+	<param name="s"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Meanstream.Core.Providers.SqlServerDataProvider.Serializer`1">
+	<summary>
+ This is a generic class that supports
+ serialization and deserialization for any type
+ </summary>
+	<typeparam name="T">class type</typeparam>
+	<remarks></remarks>
+</member><member name="M:Meanstream.Portal.ComponentModel.ComponentType.#ctor(System.Type)">
+	<summary>
+ Initializes a new instance of the ComponentType class.
+ </summary>
+	<param name="baseType">The base type of Components of this ComponentType</param>
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetPassword(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.ResetPassword(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.ValidateUser(System.String,System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetUser(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetUserNameByEmail(System.String)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.DeleteUser(System.String,System.Boolean)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetNumberOfUsersOnline">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.CheckPassword(System.String,System.String,System.Boolean,System.Boolean)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetPasswordWithFormat(System.String,System.Boolean,System.Int32@,System.String@,System.Int32@,System.String@,System.Int32@,System.Int32@,System.Boolean@,System.DateTime@,System.DateTime@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetPasswordFromDB(System.String,System.String,System.Boolean,System.Int32@,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetEncodedPasswordAnswer(System.String,System.String)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GeneratePassword">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetNullableString(System.Data.SqlClient.SqlDataReader,System.Int32)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlMembershipProvider.GetExceptionText(System.Int32)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.#ctor(System.Guid)">
+	<summary>
+ Initializes the user control widget module and loads from the data store by unique ID  
+ </summary>
+	<param name="Id">The <see cref="T:System.Integer"/> the unique ID.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.Create(System.String,System.String,System.Guid,System.Guid,System.Boolean)">
+	<summary>
+ Creates a new custom widget module and saves the content to the data store   
+ </summary>
+	<param name="Name">The <see cref="T:System.String"/> Name of the custom control</param>
+	<param name="VirtualPathToUserControl">The <see cref="T:System.String"/> virtual path to the custom control</param>
+	<param name="ModuleId">The <see cref="T:System.Integer"/> published WidgetId</param>
+	<param name="ModuleVersionId">The <see cref="T:System.Integer"/> version WidgetId</param>
+	<param name="Visible">The <see cref="T:System.Boolean"/> visibility of the user control</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule"/> new widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.GetById(System.Guid)">
+	<summary>
+ Retrieves the custom widget module from the data store by unique ID 
+ </summary>
+	<param name="Id">The <see cref="T:System.Guid"/> the unique ID.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.GetByModuleVersionId(System.Guid)">
+	<summary>
+ Retrieves the custom version of a widget module from the data store by ModuleVersionId (WidgetId)
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Guid"/> the version WidgetId.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.GetByModuleId(System.Guid)">
+	<summary>
+ Retrieves the published custom widget module from the data store by ModuleId (WidgetId)
+ </summary>
+	<param name="ModuleId">The <see cref="T:System.Guid"/> the new WidgetId.</param>
+	<returns>The <see cref="T:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule"/> widget module</returns>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.Save">
+	<summary>
+ Implements <see cref="M:Meanstream.Portal.Core.WidgetFramework.IModuleDTO.Save"/> Saves the widget's custom content to the data store.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.UserControl.WidgetModule.Delete">
+	<summary>
+ Implements <see cref="M:Meanstream.Portal.Core.WidgetFramework.IModuleDTO.Delete"/> interface. Deletes the widget's custom content from the data store during widget deletion.
+ </summary>
+</member><member name="M:Meanstream.Portal.ComponentModel.TransientComponentBuilder.#ctor(System.String,System.Type)">
+	<summary>
+ Initializes a new instance of the TransientComponentBuilder class.
+ </summary>
+	<param name="name">The name of the component</param>
+	<param name="type">The type of the component</param>
+</member><member name="P:Meanstream.Portal.Core.Messaging.ApplicationMessagingManager.Enabled">
+	<summary>
+ Gets enabled/disabled status of messaging.
+ It is a read only property, the application messaging can be set up in the web.config file.
+ </summary>
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetPropertyValuesFromDatabase(System.String,System.Configuration.SettingsPropertyValueCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.DeleteProfiles(System.String[])">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.DeleteInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetNumberOfInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.AspNetMembershipProvider.SqlProfileProvider.GetProfilesForQuery(System.Data.SqlClient.SqlParameter[],System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="T:Meanstream.Portal.Providers.PortalSiteMapProvider.SqlSiteMapProvider">
+	<summary>
+ SqlPortalSiteMapProvider
+ This class is a site map provider implementation for site map data stored in SQL Server Database.
+ This provider provides caching feature so that it will return root SiteMapNode if available in cache.
+ </summary>
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetPropertyValuesFromDatabase(System.String,System.Configuration.SettingsPropertyValueCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.CreateInputParam(System.String,System.Data.SqlDbType,System.Object)">
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.DeleteProfiles(System.String[])">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.DeleteInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetNumberOfInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Providers.WordPressMembershipProvider.SqlProfileProvider.GetProfilesForQuery(System.Data.SqlClient.SqlParameter[],System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)">
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.GetIModuleDTO">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.GetIModuleDTO"/> to retrieve a custom widget module.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnAddToPageCreate(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnAddToPageCreate"/> called by the system during page creation.
+ </summary>
+	<param name="ModuleId">The <see cref="T:System.Guid"/> Widget's ModuleId (same as WidgetId).</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnAddToPage">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnAddToPage"/> called by the system when a widget is added to a page version.
+ </summary>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnCopyAndAddFromVersion(System.Guid,System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnCopyAndAddFromVersion"/> called by the system when a page is copied to create a new page.
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Guid"/> the new version WidgetId.</param>
+	<param name="ModuleId">The <see cref="T:System.Guid"/> the new WidgetId.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnCreateVersionFromVersion(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnCreateVersionFromVersion"/> called by the system when a page is copied to create a new page during page publish.
+ </summary>
+	<param name="ModuleVersionId">The <see cref="T:System.Guid"/> the new version WidgetId.</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnPublish(System.Guid)">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnPublish"/> called by the system when a page is published.
+ </summary>
+	<param name="PublishedModuleId">The <see cref="T:System.Guid"/> the widget's new published moduleId (same as the new WidgetId).</param>
+</member><member name="M:Meanstream.Portal.Core.Widgets.FreeText.WidgetEditBase.OnWidgetDelete">
+	<summary>
+ Raises the <see cref="E:Meanstream.Portal.Core.WidgetFramework.WidgetVersionControl.OnWidgetDelete"/> called by the system during widget and page deletion.
+ </summary>
+</member>
+</members>
+</doc>

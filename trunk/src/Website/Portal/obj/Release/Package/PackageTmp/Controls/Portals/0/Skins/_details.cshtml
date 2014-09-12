@@ -1,0 +1,137 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.GalleryViewModel
+@{
+    Layout = null;
+}
+
+<section class="outer">
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container pattern-2 item-title">
+                <h4>@Model.Item["Name"].ToString()</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<div data-role="product">
+    <article class="ui-shop-product" data-ui="shop">
+        <!--product details -->
+        <div class="row">
+            <div class="flex-container">
+                <!--left side for desktop, beneath headline section for touch -->
+                <section class="product-images">
+                    <div class="main-image">
+                        @{
+                            var image = "https://media.r3vstack.com/assets/somersetbayhome/medium/" + Model.Item["Image"].ToString() + ".jpg?height=500";
+                            var image_finishes = "https://media.r3vstack.com/assets/somersetbayhome/finishes";
+                            var large = image + "";
+                            var thumb = image + "?width=96";
+                        }
+                        <img src="@image"/>
+                    </div>
+                    <div class="right">
+                        <a href='/gallery/printtearsheet?id=@Model.Item["@rid"].ToString().Replace("#", "")' target="_blank">VIEW TEARSHEET</a>
+                    </div>
+                    <ul class="alt-images" data-role="alt-images">
+                        <li><img src="@thumb" class="active" /></li>
+                    </ul>
+                </section>
+                <section class="product-details">
+                    @{
+                        var finish = "";
+                        var finish_css = "visibility: hidden;";
+                    }
+                    <div data-role="touch-clone" class="ui-flex-container column">
+                        <div class="ui-flex-container left wrap" data-role="skus">
+                            @foreach (JObject item in Model.Variants) 
+                            {
+                                if (item["Finish"] != null && item["Finish"].ToString() != "NULL")
+                                {
+                                    finish = item["Finish"].ToString();
+                                    finish_css = "visibility: display;";
+                                }
+                                <ul class="sku-item">
+                                    <li class="sku">
+                                        @item["SKU"].ToString()
+                                    </li>
+                                    @if (@Model.Item["Express"].ToString() == "true") 
+                                    { 
+                                        <li class="express-available"><img src="~/images/express-thumb.png" /></li>
+                                    }
+                                    
+                                    <li class="description">@item["Name"].ToString().Replace("<br>", " ").Replace("<br/>", " ")</li>
+                                    <li class="dimensions">w @item["Width"].ToString()" h @item["Height"].ToString() d @item["Depth"].ToString()"</li>
+                                    @if (item["OtherDimensions"] != null && item["OtherDimensions"].ToString() != "NULL") 
+                                    {
+                                        <li class="dimensions">@item["OtherDimensions"].ToString()</li>
+                                    } 
+                                </ul>    
+                            }
+                        </div>
+
+                        <ul class="ui-flex-container column color-selections margin-top" style="@finish_css">
+                            <h5 class="finishes">FINISHES</h5>
+                            <div class="ui-flex-container selected"><span class="black">SHOWN:</span> <span data-selected-color>@finish</span></div>
+                            <ul class="ui-flex-container left wrap colors" data-role="item-colors">
+                                @if (@Model.Item["Collection"].ToString() == "Somerset Bay" || @Model.Item["Collection"].ToString() == "Transitions")
+                                {
+                                    <li data-color="Butter Pecan"><img src="@image_finishes/ButterPecan.jpg?height=55&width=55"></li>
+                                    <li data-color="Cherry Cobbler"><img src="@image_finishes/CherryCobbler.jpg?height=55&width=55"></li>
+                                    <li data-color="Carmel Chew"><img src="@image_finishes/carmelchew.jpg?height=55&width=55"></li>
+                                    <li data-color="Blueberry"><img src="@image_finishes/blueberry.jpg?height=55&width=55"></li>
+                                    <li data-color="Key Lime Pie"><img src="@image_finishes/KeyLimePie.jpg?height=55&width=55"></li>
+                                    <li data-color="Vanilla Bean"><img src="@image_finishes/VanillaBean.jpg?height=55&width=55"></li>
+                                    <li data-color="Cocoa"><img src="@image_finishes/cocoa.jpg?height=55&width=55"></li>
+                                    <li data-color="Cotton Candy"><img src="@image_finishes/CottonCandy.jpg?height=55&width=55"></li>
+                                    <li data-color="Truffle"><img src="@image_finishes/truffle.jpg?height=55&width=55"></li>
+                                    <li data-color="Black Forest"><img src="@image_finishes/BlackForest.jpg?height=55&width=55"></li>
+                                    <li data-color="Creme Brulee"><img src="@image_finishes/CremeBrulee.jpg?height=55&width=55"></li>
+                                    <li data-color="jelly bean green"><img src="@image_finishes/jellybeangreen.jpg?height=55&width=55"></li>
+                                    <li data-color="Gelato"><img src="@image_finishes/gelato.jpg?height=55&width=55"></li>
+                                    <li data-color="Pistachio"><img src="@image_finishes/Pistachio.jpg?height=55&width=55"></li>
+                                    <li data-color="powdered sugar"><img src="@image_finishes/powdered-sugar.jpg?height=55&width=55"></li>
+                                    <li data-color="roasted marshmallow"><img src="@image_finishes/roastedmarshmallow.jpg?height=55&width=55"></li>
+                                }
+                            </ul>
+                            
+                            @if (@Model.Item["Collection"].ToString() == "Transitions")
+                            {
+                                <br />
+                                <h5 class="finishes">NON DISTRESSED FINISHES</h5>
+                                <br />
+                                <ul class="ui-flex-container left wrap colors" data-role="item-colors">
+                                    <li data-color="Cayenne"><img src="@image_finishes/Cayenne.jpg?height=55&width=55"></li>
+                                    <li data-color="Java"><img src="@image_finishes/Java.jpg?height=55&width=55"></li>
+                                    <li data-color="Stone"><img src="@image_finishes/Stone.jpg?height=55&width=55"></li>
+                                    <li data-color="Ebony"><img src="@image_finishes/Ebony.jpg?height=55&width=55"></li>
+                                    <li data-color="Ivory"><img src="@image_finishes/Ivory.jpg?height=55&width=55"></li>
+                                </ul>
+                            }
+                        </div>
+                        
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!--visible on touch devices only -->
+        <div class="row" data-role="touch-placeholder">
+            <div class="small-12 columns">
+                <!-- data-role="touch-clone" goes here -->
+                <div data-role="touch-clone-container">
+
+                </div>
+            </div>
+            <div class="small-12 columns">
+                <div data-role="touch-bullets"></div>
+                <div data-role="touch-help" data-expand></div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("li[data-color^='@finish']").attr("class", "active");
+    });
+</script>

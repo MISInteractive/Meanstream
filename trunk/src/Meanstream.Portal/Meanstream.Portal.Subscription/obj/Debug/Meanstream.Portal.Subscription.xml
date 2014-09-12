@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Meanstream.Portal.Subscription
+</name>
+</assembly>
+<members>
+<member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Meanstream.Portal.Subscription.Extensibility.AttributeEntityManager">
+	<summary>
+ Decorator class that references the IAttributeEntity that processes and tracks attributes.
+ This class provides the way to decouple the AttributeEntity from its implementation.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

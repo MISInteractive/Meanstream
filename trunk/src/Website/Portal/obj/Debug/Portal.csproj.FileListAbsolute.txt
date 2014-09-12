@@ -1,0 +1,165 @@
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Portal.dll.config
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Portal.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Portal.pdb
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Antlr3.Runtime.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\EntityFramework.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\EntityFramework.SqlServer.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Google.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Web.Infrastructure.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Newtonsoft.Json.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Owin.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Helpers.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Mvc.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Optimization.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Razor.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.Deployment.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.Razor.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\WebGrease.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Helpers.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Mvc.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Optimization.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.Razor.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.Deployment.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\System.Web.WebPages.Razor.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Newtonsoft.Json.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Antlr3.Runtime.pdb
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\EntityFramework.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\EntityFramework.SqlServer.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Google.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\obj\Debug\Portal.dll
+c:\users\david\documents\visual studio 2013\Projects\Portal\Portal\obj\Debug\Portal.pdb
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Portal.dll.config
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Portal.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Portal.pdb
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Antlr3.Runtime.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\EntityFramework.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\EntityFramework.SqlServer.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Newtonsoft.Json.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Owin.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Helpers.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Mvc.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Optimization.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Razor.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.Razor.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\WebGrease.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Newtonsoft.Json.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Helpers.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Mvc.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Optimization.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.Razor.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\System.Web.WebPages.Razor.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Antlr3.Runtime.pdb
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\EntityFramework.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\EntityFramework.SqlServer.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\obj\Debug\Portal.dll
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\obj\Debug\Portal.pdb
+C:\Users\David\Repositories\MVC-Projects\sldesigns\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Portal.dll.config
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Portal.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Portal.pdb
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Antlr3.Runtime.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\EntityFramework.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\EntityFramework.SqlServer.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Newtonsoft.Json.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Owin.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Helpers.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Mvc.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Optimization.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Razor.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.Deployment.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.Razor.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\WebGrease.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Newtonsoft.Json.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Helpers.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Mvc.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Optimization.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.Razor.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.Deployment.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\System.Web.WebPages.Razor.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Antlr3.Runtime.pdb
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\EntityFramework.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\EntityFramework.SqlServer.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\obj\Debug\Portal.csprojResolveAssemblyReference.cache
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\obj\Debug\Portal.dll
+C:\Users\David\Repositories\Meanstream\trunk\src\Portal\obj\Debug\Portal.pdb

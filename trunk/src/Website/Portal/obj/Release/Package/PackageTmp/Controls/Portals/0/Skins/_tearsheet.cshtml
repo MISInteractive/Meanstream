@@ -1,0 +1,105 @@
+﻿@using Newtonsoft.Json.Linq;
+@model Portal.Models.GalleryViewModel
+@{
+    Layout = "~/Views/Shared/_TearsheetLayout.cshtml";
+}
+
+
+<section class="outer">
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container column top full-width center">
+                <br />
+                <img src="/images/logo.png" />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="outer">
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container pattern-2 item-title">
+                <h4>@Model.Item["Name"].ToString()</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="outer">
+    <div class="row">
+        <div class="columns default-12">
+            <div class="ui-flex-container column top full-width center">
+                <section class="product-images">
+                    <div class="main-image">
+                        @{
+                            var image1 = "https://media.r3vstack.com/assets/somersetbayhome/medium/" + Model.Item["Image"].ToString() + ".jpg";
+                            var large1 = image1 + "";
+                            var thumb1 = image1 + "?width=96";
+                        }
+                        <img src="@image1" />
+                    </div>
+                </section>
+                <div data-role="product">
+                    <br /><br />
+                    <table width="950" align="center">
+                        
+                        @{
+                            var finish = "";
+                            var finish_css = "visibility: hidden;";
+                            int index = 0;
+                        }
+
+                        
+                            @foreach (JObject item in Model.Variants)
+                            {
+                                if (index == 0)
+                                {
+                                    @Html.Raw("<tr>");
+                                }
+                                
+                                if (item["Finish"] != null && item["Finish"].ToString() != "NULL")
+                                {
+                                    finish = item["Finish"].ToString();
+                                    finish_css = "visibility: display;";
+                                }
+
+                                <td width="150">
+                                    @item["SKU"].ToString()
+                                    <br />
+                                    @if (@Model.Item["Express"].ToString() == "true")
+                                    {
+                                        <span class="express-available">Express Available</span>
+                                        <br />
+                                    }
+                                    <span class="description">@item["Name"].ToString().Replace("<br>", " ").Replace("<br/>", " ")</span>
+                                    <br />
+                                    <span class="dimensions">w @item["Width"].ToString()" h @item["Height"].ToString() d @item["Depth"].ToString()"</span>
+                                    @if (item["OtherDimensions"] != null && item["OtherDimensions"].ToString() != "NULL")
+                                    {
+                                        <span class="dimensions">@item["OtherDimensions"].ToString()</span>
+                                    }
+                                    <br /><br />
+                                </td>
+                                
+                                if (index == 3)
+                                {
+                                    @Html.Raw("</tr>");
+                                    index = 0;
+                                }
+                                else 
+                                {
+                                    index++;    
+                                }
+                                
+                            }
+                        
+                    </table>
+
+
+                </div>
+            </div>
+
+       </div>
+    </div>
+</section>
+
+

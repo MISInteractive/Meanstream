@@ -1,0 +1,105 @@
+﻿.msCombo_txtBox
+{
+ margin: 0;    
+ background: url(images/keepitsimple-bg.png);
+ background-position: top left;
+ background-repeat: no-repeat;
+ border:0px;
+ padding: 2px 0px 0px 8px;
+ font-size: 12px;
+ font-family:Arial, Verdana, sans-serif;
+ color:#666666;
+ height: 22px;
+ 
+    
+}
+
+.msCombo_Panel
+{
+    background-color:#e6e6e6;
+    margin-top:1px;
+    margin-left:0px;
+    border-color:#9c9c9c;
+    border-style:solid;
+    border-width:1px;
+    padding-left:15px;
+    
+   scrollbar-face-color: #f1f1f1;
+   scrollbar-highlight-color: #efefef;
+   scrollbar-shadow-color: #efefef;
+   scrollbar-3dlight-color: #efefef;
+   scrollbar-arrow-color: #111111;
+   scrollbar-track-color: #272727;
+   scrollbar-darkshadow-color: #efefef; 
+    
+   
+}
+.msCombo_Items 
+{
+   background-color:#e6e6e6;
+    margin-top:1px;
+    border-color:#9c9c9c;
+    border-style:solid;
+    border-width:1px; 
+    line-height:18px;
+    padding-left:0px;
+    text-indent:10px;
+    list-style: none;
+    
+   scrollbar-face-color: #f1f1f1;
+   scrollbar-highlight-color: #efefef;
+   scrollbar-shadow-color: #efefef;
+   scrollbar-3dlight-color: #efefef;
+   scrollbar-arrow-color: #111111;
+   scrollbar-track-color: #272727;
+   scrollbar-darkshadow-color: #efefef; 
+     
+}
+
+.msCombo_Items li
+{
+    font-size:11px;
+    font-family:Arial, Verdana, sans-serif;
+    color:#858585;
+    cursor:default;
+   
+}
+
+.msCombo_Items li:hover
+{
+    background-color:#fdfdfd;
+    color:#666666;
+    cursor:default;
+}
+
+.msCombo_Container
+{
+  background:url(images/keepitsimple-arrow.png) no-repeat;
+  background-position:top right;
+  width:23px;
+  height:22px;
+  
+  
+}
+
+.msCombo_Panel_TreeView
+{
+    background-color:#e6e6e6;
+    margin-top:1px;
+    margin-left:0px;
+    border-color:#9c9c9c;
+    border-style:solid;
+    border-width:1px;
+    padding-left:0px;
+    
+     scrollbar-face-color: #f1f1f1;
+   scrollbar-highlight-color: #efefef;
+   scrollbar-shadow-color: #efefef;
+   scrollbar-3dlight-color: #efefef;
+   scrollbar-arrow-color: #111111;
+   scrollbar-track-color: #272727;
+   scrollbar-darkshadow-color: #efefef; 
+    
+   
+}
+

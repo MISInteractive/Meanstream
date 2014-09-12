@@ -1,0 +1,195 @@
+﻿.Black .meanstream_menu 
+{
+	display: none;
+}
+
+.Black .meanstream_menu_root
+{
+	background-color: Transparent;
+	
+}
+.Black .meanstream_menu_root td.rootMenu 
+{
+	
+	position: relative;
+	display: inline-block;
+	
+	padding-right: 26px;
+	padding-left: 25px;
+	
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal;
+    TEXT-TRANSFORM: uppercase;
+    TEXT-DECORATION: none;
+    top: 0px;
+    line-height: 35px;
+    
+    background-image:url('images/nav-line.png');
+	background-repeat:no-repeat;
+	background-position: center right;
+	background-size: 1px 55px;
+}
+
+.Black .meanstream_menu_root td.rootMenu.selected
+{ 
+
+	background-color: #444; 
+	
+	font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #f0eaa3;
+    font-weight: normal;
+    TEXT-TRANSFORM: uppercase;
+    TEXT-DECORATION: none;
+    
+    cursor: pointer;
+}
+
+.Black .meanstream_menu_root td.rootMenu.firstItem  
+{
+	padding: 0px 26px 0px 0px;
+    background-color: transparent; 
+}
+
+
+/*.Black .meanstream_menu_root.vertical {
+	width:140px;
+}
+.Black .meanstream_menu_root.vertical td.rootMenu {
+	-moz-border-radius:8px 0px 0 8px;
+	-webkit-border-top-right-radius:0px;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:8px;
+}*/
+
+.Black_meanstream_menu_container_shadow {
+	padding:2px;
+	padding-bottom:0px;
+	left:-2px;
+	top:1px;
+}
+
+.Black_meanstream_menu_container {
+	background-color:#444;
+	padding:0;
+}
+
+.Black_meanstream_menu_container .title {
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal;
+    TEXT-DECORATION: none;
+}
+.Black_meanstream_menu_container .title a {
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal;
+    TEXT-DECORATION: none;
+}
+.Black_meanstream_menu_container .title a:hover {
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #f0eaa3;
+    font-weight: normal;
+    TEXT-DECORATION: none;
+}
+.Black_meanstream_menu_container .title a:visited {
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal;
+    TEXT-DECORATION: none;
+}
+
+.Black_meanstream_menu_container .text {
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: normal;
+    TEXT-DECORATION: none;
+}
+
+/*.Black_meanstream_menu_container .line {
+	background-color:transparent;
+	width:100%;
+}
+
+.Black_meanstream_menu_container .line.title {
+	background-color:#B23305;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:14px;
+	border-bottom:1px solid darkred;
+}
+
+.Black_meanstream_menu_container .line.title a{
+	font-size:14px;
+}
+
+.Black_meanstream_menu_container td a{
+	text-decoration:none;
+	color: #f3f3f3;
+}
+
+.Black_meanstream_menu_container td.voice{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	padding:7px;
+}*/
+
+/*.menuContainer .separator{
+	background-color:#999;
+	height:1px;
+}*/
+
+.Black_meanstream_menu_container td.img{
+	font-family:Arial,Helvetica,sans-serif;
+	text-align:center;
+	font-size:12px;
+	color: #c3c3c3;
+	background-color:transparent;
+	width:24px;
+	padding:5px;
+}
+
+.Black_meanstream_menu_container td.img img{
+
+}
+
+/*.Black_meanstream_menu_container .selected td {
+	background-color:#666666;
+	background-image:url("images/bgnd_sel_2.jpg");
+	color:#ffffff;
+}
+
+.Black_meanstream_menu_container .selected td a {
+	color:#ffffff;
+}
+
+.Black_meanstream_menu_container .disabled td, .Black_meanstream_menu_container .disabled td a {
+	color: #cccccc;
+}*/
+
+
+/*.Black_meanstream_menu_container .subMenuOpener{
+	background-image:url("images/menuArrow_w.gif");
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.Black_meanstream_menu_container .selected .subMenuOpener{
+	background-image:url("images/menuArrow.gif");
+	background-repeat:no-repeat;
+	background-position:right;
+}*/

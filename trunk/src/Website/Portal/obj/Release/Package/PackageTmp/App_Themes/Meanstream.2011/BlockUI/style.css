@@ -1,0 +1,32 @@
+﻿.msblockUIBG
+{
+    background-image:url(images/msgBGBlock.png);
+    background-repeat:no-repeat;
+    height:139px;
+    width:435px;
+    display:none;
+    padding-top:50px;
+    padding-left:50px;
+    
+   
+    
+}
+.msblockUISpinner
+{
+    background-image:url(images/spinner.gif);
+    background-repeat:no-repeat;
+    height:35px;
+    width:35px;
+    float:left;
+    margin-right:20px;
+}
+.msblockUIStatus
+{
+    font-family:verdana;
+    font-weight:bold;
+    font-size:14px;
+    color:#555555;
+    
+    
+    
+}
